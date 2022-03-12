@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+
+import portage, sys
+
+def logfile(atom, fname):
+    log_file = open(fname, "a+")
+    log_file.write(atom+'\n')
+    log_file.close()
+    return 0
+
+def keyworded(atom, arch):
+    settings = portage.config(clone=portage.settings)
+    matches = portage.portdb.match(atom)
+    if len(matches) >= 1:
+        settings.setcpv(portage.best(matches), mydb=portage.portdb)
+        print("{}", portage.best(matches))
+
+    all_keys= settings.get('KEYWORDS', '').split()
+    for kw in [ arch, '~'+arch ]:
+        if kw in all_keys:
+            logfile(atom, "0_riscv.txt")
+            return 0
+
+    for kw in [ 'arm64', '~arm64' ]:
+        if kw in all_keys:
+            logfile(atom, "1_arm64.txt")
+            logfile(portage.best(matches), "1_arm64_ver.txt")
+            return 2
+
+    logfile(atom, "2_none.txt")
+    return 1
+
+myf = open(sys.argv[1])
+for name in iter(lambda: myf.readline(), ''):
+    keyworded(name.rstrip('\n'), "riscv")
+
+myf.close()
+sys.exit(0)

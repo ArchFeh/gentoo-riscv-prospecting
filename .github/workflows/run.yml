@@ -1,0 +1,34 @@
+name: run
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    # UTC 09:00 -> CST (China) 17:00, see https://datetime360.com/cn/utc-cst-china-time/
+    - cron: '0 09 * * *'
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/liangyongxiang/gentoo-testing:full
+
+    steps:
+    - name: checkout current repo
+      uses: actions/checkout@v2
+
+    - name: checkout gentoo repo
+      uses: actions/checkout@v2
+      with:
+        repository: gentoo/gentoo
+        path: gentoo
+        fetch-depth: 2
+
+    - name: gentoo
+      run: |
+        git config --global user.email "tanekliang@gmail.com"
+        git config --global user.name "Yongxiang Liang"
+        export GENTOO_GIT_REPO=gentoo
+        ./gentoo-riscv-prospecting.sh
