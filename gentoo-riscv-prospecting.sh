@@ -2,12 +2,17 @@
 
 set -xe
 
-GENTOO_GIT_REPO="${GENTOO_GIT_REPO:-/var/db/repos/gentoo}"
-GENTOO_GIT_REPO="$(realpath $GENTOO_GIT_REPO)"
+if [ -d gentoo/.git ]; then
+    git -C gentoo pull
+else
+    git clone https://github.com/gentoo/gentoo.git
+fi
 
-#eix -# | grep -Ev '(acct-user|acct-group)' > pkgs.txt
+GENTOO_GIT_REPO="$(realpath ./gentoo)"
 
-#./keyworded pkgs.txt
+eix -# | grep -Ev '(acct-user|acct-group)' > pkgs.txt
+
+./keyworded pkgs.txt
 
 rm -rf README.md
 
