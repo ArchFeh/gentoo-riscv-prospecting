@@ -10,7 +10,7 @@ fi
 
 GENTOO_GIT_REPO="$(realpath ./gentoo)"
 
-eix -# | grep -Ev '(acct-user|acct-group|dev-haskell|dev-ros|dev-ml|ros-meta)' > pkgs.txt
+eix -# --in-overlay gentoo | grep -Ev '(acct-user|acct-group|dev-haskell|dev-ros|dev-ml|ros-meta)' > pkgs.txt
 
 ./keyworded pkgs.txt
 
