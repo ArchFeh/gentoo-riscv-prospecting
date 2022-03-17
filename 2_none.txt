@@ -143,7 +143,6 @@ app-admin/testdisk
 app-admin/tmpwatch
 app-admin/tripwire
 app-admin/ulogd
-app-admin/undertaker-scripts
 app-admin/usbview
 app-admin/vault
 app-admin/watchfolder
@@ -155,6 +154,7 @@ app-admin/xtail
 app-admin/yadm
 app-antivirus/clamtk
 app-antivirus/fangfrisch
+app-antivirus/lkrg
 app-arch/afio
 app-arch/alien
 app-arch/arc
@@ -199,7 +199,6 @@ app-arch/torrentzip
 app-arch/unace
 app-arch/unadf
 app-arch/unar
-app-arch/unmakeself
 app-arch/unrpa
 app-arch/vimball
 app-arch/wimlib
@@ -318,6 +317,7 @@ app-containers/cosign
 app-containers/cri-tools
 app-containers/distrobuilder
 app-containers/docker-bench-security
+app-containers/docker-compose
 app-containers/docker-gc
 app-containers/docker-swarm
 app-containers/go-secbench
@@ -429,6 +429,7 @@ app-crypt/zulucrypt
 app-doc/zeal
 app-editors/ecrire
 app-editors/ghostwriter
+app-editors/gnome-text-editor
 app-editors/jed
 app-editors/jedit
 app-editors/joe
@@ -553,6 +554,8 @@ app-emacs/initsplit
 app-emacs/jam-mode
 app-emacs/jasmin
 app-emacs/jde
+app-emacs/julia-mode
+app-emacs/julia-repl
 app-emacs/keywiz
 app-emacs/lean-mode
 app-emacs/ledger-mode
@@ -1787,6 +1790,7 @@ dev-db/pgagent
 dev-db/pgbadger
 dev-db/pgbouncer
 dev-db/pgcli
+dev-db/pglogical
 dev-db/pgmemcache
 dev-db/pgmodeler
 dev-db/pgpool2
@@ -1984,7 +1988,7 @@ dev-java/bnd-junit
 dev-java/boot-bin
 dev-java/browserlauncher2
 dev-java/c3p0
-dev-java/commons-beanutils
+dev-java/cal10n
 dev-java/commons-cli
 dev-java/commons-daemon
 dev-java/commons-digester
@@ -2067,11 +2071,13 @@ dev-java/openjfx
 dev-java/pdf-renderer
 dev-java/rat
 dev-java/resin-servlet-api
+dev-java/rhino
 dev-java/rome
 dev-java/rxtx
 dev-java/sax
 dev-java/sbt
 dev-java/sbt-bin
+dev-java/slf4j-ext
 dev-java/spec-alpha
 dev-java/spin
 dev-java/swing-layout
@@ -2084,7 +2090,6 @@ dev-java/typesafe-config
 dev-java/upnplib
 dev-java/validation-api
 dev-java/wsdl4j
-dev-java/xerial-core
 dev-java/xmlunit
 dev-lang/abs
 dev-lang/ammonite-repl-bin
@@ -2340,11 +2345,11 @@ dev-libs/sdformat
 dev-libs/serdisplib
 dev-libs/shhopt
 dev-libs/sink
-dev-libs/skalibs
 dev-libs/smack
 dev-libs/spsdeclib
 dev-libs/squareball
 dev-libs/stfl
+dev-libs/teakra
 dev-libs/template-glib
 dev-libs/tntnet
 dev-libs/tree-sitter-bash
@@ -3284,6 +3289,7 @@ dev-perl/Safe-Hole
 dev-perl/Schedule-At
 dev-perl/Schedule-Cron-Events
 dev-perl/Scope-Upper
+dev-perl/Search-Sitemap
 dev-perl/Search-Xapian
 dev-perl/Sereal
 dev-perl/Sereal-Decoder
@@ -3378,6 +3384,7 @@ dev-perl/Test-Kwalitee
 dev-perl/Test-LectroTest
 dev-perl/Test-Manifest
 dev-perl/Test-MinimumVersion
+dev-perl/Test-Mock-LWP
 dev-perl/Test-Mock-LWP-Dispatch
 dev-perl/Test-MockTime
 dev-perl/Test-MockTime-HiRes
@@ -3840,6 +3847,7 @@ dev-python/blessed
 dev-python/blessings
 dev-python/bluelet
 dev-python/blurb
+dev-python/boolean-py
 dev-python/bpython
 dev-python/braintree
 dev-python/brython
@@ -3957,7 +3965,6 @@ dev-python/fuse-python
 dev-python/fusepy
 dev-python/gcs-oauth2-boto-plugin
 dev-python/genson
-dev-python/geoip-python
 dev-python/git-review
 dev-python/github3
 dev-python/glooey
@@ -4017,7 +4024,6 @@ dev-python/jupyterlab_server
 dev-python/kafka-python
 dev-python/kconfiglib
 dev-python/keep
-dev-python/klein
 dev-python/latexcodec
 dev-python/lazr-config
 dev-python/lazr-delegates
@@ -4027,6 +4033,7 @@ dev-python/liblarch
 dev-python/libpillowfight
 dev-python/libpy_simdjson
 dev-python/libsass
+dev-python/license-expression
 dev-python/line_profiler
 dev-python/livereload
 dev-python/lmfit
@@ -4331,7 +4338,6 @@ dev-python/tld
 dev-python/toposort
 dev-python/transitions
 dev-python/trio-asyncio
-dev-python/tubes
 dev-python/tvdb_api
 dev-python/twython
 dev-python/txAMQP
@@ -4350,7 +4356,6 @@ dev-python/verboselogs
 dev-python/virtualenv-clone
 dev-python/virtualenvwrapper
 dev-python/visitor
-dev-python/vncdotool
 dev-python/vpython
 dev-python/wand
 dev-python/weasyprint
@@ -4901,7 +4906,6 @@ dev-util/bpftool
 dev-util/bsdiff
 dev-util/btyacc
 dev-util/build2
-dev-util/buildbot-badges
 dev-util/bustle
 dev-util/cargo-audit
 dev-util/catfish
@@ -4970,7 +4974,6 @@ dev-util/geany
 dev-util/geany-plugins
 dev-util/gef
 dev-util/gertty
-dev-util/github-cli
 dev-util/gitlab-ci-linter
 dev-util/global
 dev-util/gnome-builder
@@ -5760,6 +5763,7 @@ games-sports/billardgl
 games-sports/bygfoot
 games-sports/foobillard
 games-sports/gracer
+games-sports/skatebird
 games-sports/speed-dreams
 games-sports/stormbaancoureur
 games-sports/torcs
@@ -5933,6 +5937,7 @@ gui-apps/nm-tray
 gui-apps/swappy
 gui-apps/waybar
 gui-apps/wf-recorder
+gui-libs/gtksourceview
 gui-wm/hikari
 kde-apps/dolphin-plugins-dropbox
 kde-misc/colord-kde
@@ -6056,7 +6061,6 @@ media-gfx/apngopt
 media-gfx/arss
 media-gfx/aview
 media-gfx/brscan4
-media-gfx/cairosvg
 media-gfx/cellwriter
 media-gfx/clockphoto
 media-gfx/colorhug-client
@@ -6253,7 +6257,6 @@ media-libs/libfame
 media-libs/libfishsound
 media-libs/libggigcp
 media-libs/libggimisc
-media-libs/libggiwmh
 media-libs/libgig
 media-libs/libgroove
 media-libs/libicns
@@ -6280,6 +6283,7 @@ media-libs/libsixel
 media-libs/libsmf
 media-libs/libsoundio
 media-libs/libtaginfo
+media-libs/libvmaf
 media-libs/libxspf
 media-libs/libxtract
 media-libs/libzen
@@ -6349,12 +6353,10 @@ media-plugins/gst-plugins-dtls
 media-plugins/gst-plugins-faac
 media-plugins/gst-plugins-hls
 media-plugins/gst-plugins-kate
-media-plugins/gst-plugins-ldac
 media-plugins/gst-plugins-libde265
 media-plugins/gst-plugins-mpeg2enc
 media-plugins/gst-plugins-neon
 media-plugins/gst-plugins-ofa
-media-plugins/gst-plugins-openaptx
 media-plugins/gst-plugins-opencv
 media-plugins/gst-plugins-openh264
 media-plugins/gst-plugins-raw1394
@@ -7354,7 +7356,6 @@ net-im/ysm
 net-im/zoom
 net-irc/bnc
 net-irc/emech
-net-irc/ergo
 net-irc/irccloud-desktop-bin
 net-irc/ircmap
 net-irc/ircstats
@@ -7782,6 +7783,7 @@ net-nntp/suck
 net-nntp/tin
 net-p2p/airdcpp-webclient
 net-p2p/amule
+net-p2p/arti
 net-p2p/automatic
 net-p2p/bitflu
 net-p2p/bittornado
@@ -7789,7 +7791,6 @@ net-p2p/classified-ads
 net-p2p/cpuminer-opt
 net-p2p/ctorrent
 net-p2p/dbhub
-net-p2p/deluge
 net-p2p/ed2k_hash
 net-p2p/eiskaltdcpp
 net-p2p/energi3
@@ -8500,7 +8501,6 @@ sci-mathematics/alt-ergo
 sci-mathematics/bertini
 sci-mathematics/cadabra
 sci-mathematics/cadical
-sci-mathematics/calc
 sci-mathematics/coq
 sci-mathematics/coq-mathcomp
 sci-mathematics/coq-serapi
@@ -8757,7 +8757,6 @@ sys-apps/rtl-entropy
 sys-apps/s390-tools
 sys-apps/s6
 sys-apps/s6-linux-init
-sys-apps/s6-linux-utils
 sys-apps/s6-portable-utils
 sys-apps/s6-rc
 sys-apps/salinfo
@@ -9138,6 +9137,7 @@ sys-process/unixtop
 sys-process/watchpid
 sys-process/xjobs
 virtual/commonlisp
+virtual/dist-kernel
 virtual/gnustep-back
 virtual/ooo
 virtual/opencl

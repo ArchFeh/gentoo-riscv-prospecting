@@ -223,6 +223,7 @@ app-admin/yadm
 app-antivirus/clamav
 app-antivirus/clamtk
 app-antivirus/fangfrisch
+app-antivirus/lkrg
 app-arch/advancecomp
 app-arch/afio
 app-arch/alien
@@ -302,7 +303,6 @@ app-arch/torrentzip
 app-arch/unace
 app-arch/unadf
 app-arch/unar
-app-arch/unmakeself
 app-arch/unp
 app-arch/unrar
 app-arch/unrpa
@@ -1273,6 +1273,7 @@ app-editors/gedit-plugins
 app-editors/ghex
 app-editors/ghostwriter
 app-editors/gnome-latex
+app-editors/gnome-text-editor
 app-editors/gummi
 app-editors/gvim
 app-editors/hexcurse
@@ -1447,6 +1448,8 @@ app-emacs/initsplit
 app-emacs/jam-mode
 app-emacs/jasmin
 app-emacs/jde
+app-emacs/julia-mode
+app-emacs/julia-repl
 app-emacs/keywiz
 app-emacs/lean-mode
 app-emacs/ledger-mode
@@ -3129,6 +3132,7 @@ dev-db/pgagent
 dev-db/pgbadger
 dev-db/pgbouncer
 dev-db/pgcli
+dev-db/pglogical
 dev-db/pgmemcache
 dev-db/pgmodeler
 dev-db/pgpool2
@@ -3389,6 +3393,7 @@ dev-java/bsf
 dev-java/bsh
 dev-java/byaccj
 dev-java/c3p0
+dev-java/cal10n
 dev-java/cglib
 dev-java/checker-framework-qual
 dev-java/commons-beanutils
@@ -3616,6 +3621,7 @@ dev-java/sbt
 dev-java/sbt-bin
 dev-java/sjsxp
 dev-java/slf4j-api
+dev-java/slf4j-ext
 dev-java/slf4j-nop
 dev-java/slf4j-simple
 dev-java/snakeyaml
@@ -4256,6 +4262,7 @@ dev-libs/squareball
 dev-libs/starpu
 dev-libs/stb
 dev-libs/stfl
+dev-libs/teakra
 dev-libs/template-glib
 dev-libs/tinyxml
 dev-libs/tinyxml2
@@ -5643,6 +5650,7 @@ dev-perl/Schedule-At
 dev-perl/Schedule-Cron-Events
 dev-perl/Scope-Guard
 dev-perl/Scope-Upper
+dev-perl/Search-Sitemap
 dev-perl/Search-Xapian
 dev-perl/Sereal
 dev-perl/Sereal-Decoder
@@ -5799,6 +5807,7 @@ dev-perl/Test-LongString
 dev-perl/Test-Manifest
 dev-perl/Test-Memory-Cycle
 dev-perl/Test-MinimumVersion
+dev-perl/Test-Mock-LWP
 dev-perl/Test-Mock-LWP-Dispatch
 dev-perl/Test-MockModule
 dev-perl/Test-MockObject
@@ -6467,6 +6476,7 @@ dev-python/blosc
 dev-python/bluelet
 dev-python/blurb
 dev-python/boltons
+dev-python/boolean-py
 dev-python/booleanOperations
 dev-python/boto
 dev-python/boto3
@@ -6930,6 +6940,7 @@ dev-python/libpy_simdjson
 dev-python/libsass
 dev-python/libtmux
 dev-python/libvirt-python
+dev-python/license-expression
 dev-python/line_profiler
 dev-python/lit
 dev-python/littleutils
@@ -8340,6 +8351,7 @@ dev-ruby/prawn
 dev-ruby/prawn-table
 dev-ruby/propshaft
 dev-ruby/pry
+dev-ruby/psych
 dev-ruby/public_suffix
 dev-ruby/pundit
 dev-ruby/puppet_forge
@@ -8534,6 +8546,7 @@ dev-ruby/stamp
 dev-ruby/state_machine
 dev-ruby/stomp
 dev-ruby/stringex
+dev-ruby/stringio
 dev-ruby/strptime
 dev-ruby/strscan
 dev-ruby/subexec
@@ -9923,6 +9936,7 @@ games-sports/bygfoot
 games-sports/dustrac
 games-sports/foobillard
 games-sports/gracer
+games-sports/skatebird
 games-sports/speed-dreams
 games-sports/stormbaancoureur
 games-sports/torcs
@@ -10205,6 +10219,7 @@ gui-libs/gdk-pixbuf-loader-webp
 gui-libs/greetd
 gui-libs/gtk
 gui-libs/gtk-layer-shell
+gui-libs/gtksourceview
 gui-libs/libadwaita
 gui-libs/libhandy
 gui-libs/libwpe
@@ -11473,6 +11488,7 @@ media-libs/libuvc
 media-libs/libv4l
 media-libs/libvisio
 media-libs/libvisual
+media-libs/libvmaf
 media-libs/libvorbis
 media-libs/libvpx
 media-libs/libwebp
@@ -13620,6 +13636,7 @@ net-nntp/suck
 net-nntp/tin
 net-p2p/airdcpp-webclient
 net-p2p/amule
+net-p2p/arti
 net-p2p/automatic
 net-p2p/bitcoin-cli
 net-p2p/bitcoin-qt
@@ -14688,6 +14705,9 @@ sec-keys/openpgp-keys-mlichvar
 sec-keys/openpgp-keys-nmap
 sec-keys/openpgp-keys-notqmail
 sec-keys/openpgp-keys-oletange
+sec-keys/openpgp-keys-openssh
+sec-keys/openpgp-keys-openssl
+sec-keys/openpgp-keys-openwall
 sec-keys/openpgp-keys-openzfs
 sec-keys/openpgp-keys-python
 sec-keys/openpgp-keys-rust
@@ -14697,6 +14717,7 @@ sec-keys/openpgp-keys-teemutoivola
 sec-keys/openpgp-keys-terminator
 sec-keys/openpgp-keys-tor
 sec-keys/openpgp-keys-voikko
+sec-keys/openpgp-keys-weechat
 sec-keys/signify-keys-signify
 sec-policy/apparmor-profiles
 sec-policy/selinux-abrt

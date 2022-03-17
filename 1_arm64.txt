@@ -1,4 +1,3 @@
-app-accessibility/brltty
 app-accessibility/espeakup
 app-admin/ananicy
 app-admin/augeas
@@ -21,8 +20,8 @@ app-admin/salt
 app-admin/setools
 app-admin/spectre-meltdown-checker
 app-admin/superadduser
-app-admin/sysklogd
 app-admin/tmpreaper
+app-admin/undertaker-scripts
 app-admin/verynice
 app-admin/webapp-config
 app-arch/arj
@@ -46,14 +45,11 @@ app-benchmarks/stress-ng
 app-benchmarks/sysbench
 app-cdr/dolphin-plugins-mountiso
 app-containers/buildah
-app-containers/catatonit
 app-containers/cri-o
 app-containers/crun
-app-containers/docker-compose
 app-containers/docker-credential-helpers
 app-containers/docker-registry
 app-containers/flannel
-app-containers/podman
 app-containers/skopeo
 app-crypt/acme-sh
 app-crypt/aescrypt
@@ -68,11 +64,8 @@ app-crypt/md5deep
 app-crypt/paperkey
 app-crypt/pdfcrack
 app-crypt/pgpdump
-app-crypt/swtpm
 app-crypt/tpm-tools
-app-crypt/tpm2-abrmd
 app-crypt/tpm2-tools
-app-crypt/tpm2-tss
 app-dicts/myspell-large-en
 app-doc/NaturalDocs
 app-doc/gnucash-docs
@@ -106,7 +99,6 @@ app-eselect/eselect-package-manager
 app-eselect/eselect-vdr
 app-forensics/aflplusplus
 app-forensics/aide
-app-i18n/enca
 app-i18n/fbterm
 app-i18n/ibus-rime
 app-i18n/kcm-fcitx
@@ -151,7 +143,6 @@ app-portage/diffmask
 app-portage/gentoopm
 app-portage/grs
 app-portage/metagen
-app-portage/pkg-testing-tools
 app-portage/porticron
 app-portage/portpeek
 app-portage/pram
@@ -266,6 +257,7 @@ dev-java/bsh
 dev-java/byaccj
 dev-java/cglib
 dev-java/checker-framework-qual
+dev-java/commons-beanutils
 dev-java/commons-codec
 dev-java/commons-collections
 dev-java/commons-compress
@@ -398,7 +390,6 @@ dev-java/qdox
 dev-java/randomized-runner
 dev-java/reflections
 dev-java/relaxng-datatype
-dev-java/rhino
 dev-java/sac
 dev-java/saxon
 dev-java/sjsxp
@@ -420,6 +411,7 @@ dev-java/woodstox-core
 dev-java/xalan
 dev-java/xalan-serializer
 dev-java/xerces
+dev-java/xerial-core
 dev-java/xjavac
 dev-java/xml-commons-external
 dev-java/xml-commons-resolver
@@ -433,7 +425,6 @@ dev-java/xz-java
 dev-java/zstd-jni
 dev-lang/R
 dev-lang/elixir
-dev-lang/erlang
 dev-lang/fpc
 dev-lang/gforth
 dev-lang/ispc
@@ -510,7 +501,6 @@ dev-libs/libsecp256k1
 dev-libs/libsigc++
 dev-libs/libslz
 dev-libs/libspt
-dev-libs/libtpms
 dev-libs/libunique
 dev-libs/libwacom
 dev-libs/libwapcaplet
@@ -522,6 +512,7 @@ dev-libs/raft
 dev-libs/redland-bindings
 dev-libs/rocksdb
 dev-libs/simdjson
+dev-libs/skalibs
 dev-libs/spdlog
 dev-libs/stb
 dev-libs/tllist
@@ -567,13 +558,11 @@ dev-python/absl-py
 dev-python/adblock
 dev-python/aiodns
 dev-python/alagitpull
-dev-python/alembic
 dev-python/aniso8601
 dev-python/arpeggio
 dev-python/asn1crypto
 dev-python/authheaders
 dev-python/authres
-dev-python/autobahn
 dev-python/autopage
 dev-python/autopep8
 dev-python/babelfish
@@ -589,7 +578,6 @@ dev-python/cachelib
 dev-python/cachetools
 dev-python/case
 dev-python/cbor
-dev-python/cbor2
 dev-python/chai
 dev-python/cherrypy
 dev-python/cjkwrap
@@ -604,10 +592,8 @@ dev-python/collective-checkdocs
 dev-python/colorclass
 dev-python/colorlog
 dev-python/colorspacious
-dev-python/commentjson
 dev-python/cov-core
 dev-python/crashtest
-dev-python/cssselect2
 dev-python/cssutils
 dev-python/debtcollector
 dev-python/dicttoxml
@@ -632,9 +618,9 @@ dev-python/flask-babel
 dev-python/flask-principal
 dev-python/flask-restful
 dev-python/flask-sphinx-themes
-dev-python/flatbuffers
 dev-python/gatt-python
 dev-python/genshi
+dev-python/geoip-python
 dev-python/gevent-websocket
 dev-python/geventhttpclient
 dev-python/glob2
@@ -662,14 +648,12 @@ dev-python/kaptan
 dev-python/kazoo
 dev-python/keystoneauth
 dev-python/kombu
-dev-python/ldap3
 dev-python/libarchive-c
 dev-python/libcloud
 dev-python/libnacl
 dev-python/libtmux
 dev-python/libvirt-python
 dev-python/lockfile
-dev-python/lz4
 dev-python/mamba
 dev-python/manuel
 dev-python/marshmallow
@@ -717,7 +701,6 @@ dev-python/proto-plus
 dev-python/publicsuffix
 dev-python/pudb
 dev-python/py-amqp
-dev-python/py-ubjson
 dev-python/pyaes
 dev-python/pycapnp
 dev-python/pycares
@@ -730,13 +713,10 @@ dev-python/pylru
 dev-python/pynest2d
 dev-python/pypeg2
 dev-python/pyperclip
-dev-python/pypng
-dev-python/pypugjs
 dev-python/pypy
 dev-python/pypy-exe
 dev-python/pypy3
 dev-python/pypy3-exe
-dev-python/pyqrcode
 dev-python/pyroute2
 dev-python/pyscreenshot
 dev-python/pyside2
@@ -755,11 +735,9 @@ dev-python/pytest-services
 dev-python/pytest-tempdir
 dev-python/pytest-xvfb
 dev-python/python-augeas
-dev-python/python-bugzilla
 dev-python/python-cinderclient
 dev-python/python-distutils-extra
 dev-python/python-docs
-dev-python/python-editor
 dev-python/python-gflags
 dev-python/python-glanceclient
 dev-python/python-ironicclient
@@ -774,7 +752,6 @@ dev-python/python-novaclient
 dev-python/python-openstackclient
 dev-python/python-swiftclient
 dev-python/python-systemd
-dev-python/pytrie
 dev-python/pytzdata
 dev-python/pyudev
 dev-python/pyvirtualdisplay
@@ -790,7 +767,6 @@ dev-python/repoze-sphinx-autointerface
 dev-python/requests-file
 dev-python/requests-kerberos
 dev-python/requestsexceptions
-dev-python/resolvelib
 dev-python/restructuredtext-lint
 dev-python/retrying
 dev-python/rope
@@ -803,7 +779,6 @@ dev-python/serpent
 dev-python/setuptools_trial
 dev-python/shiboken2
 dev-python/simplegeneric
-dev-python/snappy
 dev-python/sphinx-autoapi
 dev-python/sphinx-gallery
 dev-python/sphinx_celery
@@ -820,21 +795,18 @@ dev-python/tempita
 dev-python/texttable
 dev-python/tldextract
 dev-python/translate-toolkit
-dev-python/treq
 dev-python/trimesh
-dev-python/txaio
-dev-python/txrequests
 dev-python/unicodecsv
 dev-python/unidiff
 dev-python/uranium
 dev-python/urwid_readline
 dev-python/uvloop
 dev-python/vine
+dev-python/vncdotool
 dev-python/voluptuous
 dev-python/warlock
 dev-python/webassets
 dev-python/websockify
-dev-python/wsaccel
 dev-python/wstools
 dev-python/xxhash
 dev-python/yapf
@@ -964,14 +936,6 @@ dev-util/astyle
 dev-util/bcc
 dev-util/bitcoin-tx
 dev-util/bpftrace
-dev-util/buildbot
-dev-util/buildbot-console-view
-dev-util/buildbot-grid-view
-dev-util/buildbot-pkg
-dev-util/buildbot-waterfall-view
-dev-util/buildbot-worker
-dev-util/buildbot-wsgi-dashboards
-dev-util/buildbot-www
 dev-util/cargo-ebuild
 dev-util/cargo-license
 dev-util/cccc
@@ -1190,7 +1154,6 @@ mail-mta/exim
 mail-mta/notqmail
 mail-mta/postfix
 mail-mta/ssmtp
-media-fonts/fira-code
 media-fonts/roboto
 media-fonts/sazanami
 media-gfx/alembic
@@ -1265,7 +1228,6 @@ media-libs/vigra
 media-libs/vitamtp
 media-libs/vo-aacenc
 media-libs/waffle
-media-libs/x265
 media-libs/zita-convolver
 media-plugins/calf
 media-plugins/gst-plugins-bs2b
@@ -1295,7 +1257,6 @@ media-sound/musescore
 media-sound/playerctl
 media-sound/pulsemixer
 media-sound/timidity-eawpatches
-media-sound/toolame
 media-tv/dtv-scan-tables
 media-tv/gentoo-vdr-scripts
 media-tv/kodi
@@ -1309,7 +1270,6 @@ media-video/gaupol
 media-video/mjpg-streamer
 media-video/motion
 media-video/movit
-media-video/mplayer
 media-video/subliminal
 media-video/vdr
 media-video/webcamoid
@@ -1327,7 +1287,6 @@ net-analyzer/munin
 net-analyzer/nagios
 net-analyzer/nagios-core
 net-analyzer/nagios-plugins
-net-analyzer/netperf
 net-analyzer/nettop
 net-analyzer/prettyping
 net-analyzer/scapy
@@ -1363,6 +1322,7 @@ net-im/prosody-modules
 net-im/telepathy-connection-managers
 net-irc/anope
 net-irc/atheme-services
+net-irc/ergo
 net-irc/ii
 net-irc/inspircd
 net-irc/irker
@@ -1420,7 +1380,6 @@ net-misc/frr
 net-misc/gerbera
 net-misc/gwhois
 net-misc/htpdate
-net-misc/iperf
 net-misc/iprange
 net-misc/kea
 net-misc/keychain
@@ -1462,6 +1421,7 @@ net-news/liferea
 net-p2p/bitcoin-cli
 net-p2p/bitcoin-qt
 net-p2p/bitcoind
+net-p2p/deluge
 net-p2p/ktorrent
 net-p2p/qbittorrent
 net-p2p/rtorrent
@@ -1521,6 +1481,7 @@ sci-libs/shapely
 sci-libs/suitesparse
 sci-libs/vtk
 sci-libs/xdmf2
+sci-mathematics/calc
 sci-mathematics/cgal
 sci-mathematics/genius
 sci-mathematics/lpsolve
@@ -1825,6 +1786,7 @@ sys-apps/policycoreutils
 sys-apps/progress
 sys-apps/renameutils
 sys-apps/restorecond
+sys-apps/s6-linux-utils
 sys-apps/sdparm
 sys-apps/secilc
 sys-apps/selinux-python
@@ -1941,7 +1903,6 @@ sys-process/numad
 sys-process/runit
 sys-process/schedtool
 virtual/checkpassword
-virtual/dist-kernel
 virtual/dotnet-sdk
 virtual/httpd-basic
 virtual/httpd-cgi

@@ -1,5 +1,6 @@
 app-accessibility/at-spi2-atk
 app-accessibility/at-spi2-core
+app-accessibility/brltty
 app-accessibility/caribou
 app-accessibility/espeak
 app-accessibility/espeak-ng
@@ -35,6 +36,7 @@ app-admin/perl-cleaner
 app-admin/sshguard
 app-admin/stow
 app-admin/sudo
+app-admin/sysklogd
 app-admin/syslog-ng
 app-admin/sysstat
 app-admin/system-config-printer
@@ -84,6 +86,7 @@ app-cdr/cdrdao
 app-cdr/cdrtools
 app-cdr/dvd+rw-tools
 app-containers/apptainer
+app-containers/catatonit
 app-containers/conmon
 app-containers/containerd
 app-containers/docker
@@ -91,6 +94,7 @@ app-containers/docker-cli
 app-containers/docker-proxy
 app-containers/lxc
 app-containers/lxc-templates
+app-containers/podman
 app-containers/runc
 app-containers/slirp4netns
 app-crypt/acme
@@ -120,6 +124,9 @@ app-crypt/sbsigntools
 app-crypt/seahorse
 app-crypt/shash
 app-crypt/stoken
+app-crypt/swtpm
+app-crypt/tpm2-abrmd
+app-crypt/tpm2-tss
 app-crypt/trousers
 app-crypt/yubikey-manager
 app-crypt/yubioath-desktop
@@ -842,6 +849,7 @@ app-eselect/eselect-timidity
 app-eselect/eselect-vi
 app-eselect/eselect-wxwidgets
 app-i18n/anthy
+app-i18n/enca
 app-i18n/fcitx
 app-i18n/fcitx-anthy
 app-i18n/fcitx-chewing
@@ -938,6 +946,7 @@ app-portage/mgorny-dev-scripts
 app-portage/mirrorselect
 app-portage/nattka
 app-portage/pfl
+app-portage/pkg-testing-tools
 app-portage/portage-utils
 app-portage/recover-broken-vdb
 app-portage/repoman
@@ -1139,6 +1148,7 @@ dev-go/go-md2man
 dev-go/vend
 dev-lang/cfortran
 dev-lang/duktape
+dev-lang/erlang
 dev-lang/go
 dev-lang/go-bootstrap
 dev-lang/lua
@@ -1320,6 +1330,7 @@ dev-libs/libtermkey
 dev-libs/libtimezonemap
 dev-libs/libtomcrypt
 dev-libs/libtommath
+dev-libs/libtpms
 dev-libs/libudfread
 dev-libs/libunistring
 dev-libs/libusb
@@ -2003,6 +2014,7 @@ dev-python/aiohttp-cors
 dev-python/aioredis
 dev-python/aiosignal
 dev-python/alabaster
+dev-python/alembic
 dev-python/ansible-pygments
 dev-python/anyio
 dev-python/apipkg
@@ -2021,6 +2033,7 @@ dev-python/async_generator
 dev-python/async_timeout
 dev-python/atomicwrites
 dev-python/attrs
+dev-python/autobahn
 dev-python/autocommand
 dev-python/automat
 dev-python/aws-sam-translator
@@ -2051,6 +2064,7 @@ dev-python/brotlicffi
 dev-python/bsddb3
 dev-python/build
 dev-python/cairocffi
+dev-python/cbor2
 dev-python/certifi
 dev-python/cffi
 dev-python/cfgv
@@ -2067,6 +2081,7 @@ dev-python/click-log
 dev-python/click-threading
 dev-python/cloudpickle
 dev-python/colorama
+dev-python/commentjson
 dev-python/commonmark
 dev-python/configargparse
 dev-python/configobj
@@ -2080,6 +2095,7 @@ dev-python/cryptography
 dev-python/css-parser
 dev-python/csscompressor
 dev-python/cssselect
+dev-python/cssselect2
 dev-python/cycler
 dev-python/cython
 dev-python/cython-test-exception-raiser
@@ -2136,6 +2152,7 @@ dev-python/flask
 dev-python/flask-cors
 dev-python/flask-login
 dev-python/flask-sqlalchemy
+dev-python/flatbuffers
 dev-python/flexmock
 dev-python/flit_core
 dev-python/fonttools
@@ -2228,9 +2245,11 @@ dev-python/jupyterlab_pygments
 dev-python/k5test
 dev-python/keyring
 dev-python/kiwisolver
+dev-python/klein
 dev-python/krb5
 dev-python/lark-parser
 dev-python/lazy-object-proxy
+dev-python/ldap3
 dev-python/lit
 dev-python/littleutils
 dev-python/llfuse
@@ -2241,6 +2260,7 @@ dev-python/logical-unification
 dev-python/logutils
 dev-python/loky
 dev-python/lxml
+dev-python/lz4
 dev-python/m2crypto
 dev-python/m2r
 dev-python/makefun
@@ -2357,6 +2377,7 @@ dev-python/psycopg
 dev-python/ptyprocess
 dev-python/pure_eval
 dev-python/py
+dev-python/py-ubjson
 dev-python/pyGPG
 dev-python/pyalsa
 dev-python/pyasn1
@@ -2410,7 +2431,10 @@ dev-python/pypam
 dev-python/pyparsing
 dev-python/pypax
 dev-python/pypiserver
+dev-python/pypng
 dev-python/pyproject2setuppy
+dev-python/pypugjs
+dev-python/pyqrcode
 dev-python/pyquery
 dev-python/pyrfc3339
 dev-python/pyrsistent
@@ -2453,9 +2477,11 @@ dev-python/pytest-xdist
 dev-python/pytest-xprocess
 dev-python/python-axolotl
 dev-python/python-axolotl-curve25519
+dev-python/python-bugzilla
 dev-python/python-dateutil
 dev-python/python-dbusmock
 dev-python/python-dotenv
+dev-python/python-editor
 dev-python/python-efl
 dev-python/python-email-validator
 dev-python/python-gnupg
@@ -2472,6 +2498,7 @@ dev-python/python3-lxc
 dev-python/python3-xapp
 dev-python/pythran
 dev-python/pytidylib
+dev-python/pytrie
 dev-python/pytz
 dev-python/pytz_deprecation_shim
 dev-python/pyu2f
@@ -2500,6 +2527,7 @@ dev-python/requests-futures
 dev-python/requests-mock
 dev-python/requests-toolbelt
 dev-python/requests-unixsocket
+dev-python/resolvelib
 dev-python/responses
 dev-python/retry-decorator
 dev-python/rfc3339-validator
@@ -2539,6 +2567,7 @@ dev-python/six
 dev-python/smartypants
 dev-python/smmap
 dev-python/snakeoil
+dev-python/snappy
 dev-python/sniffio
 dev-python/snowballstemmer
 dev-python/socksio
@@ -2615,10 +2644,14 @@ dev-python/tox
 dev-python/tqdm
 dev-python/traitlets
 dev-python/tree-sitter
+dev-python/treq
 dev-python/trio
 dev-python/trustme
+dev-python/tubes
 dev-python/twine
 dev-python/twisted
+dev-python/txaio
+dev-python/txrequests
 dev-python/typed-ast
 dev-python/typeguard
 dev-python/typing-extensions
@@ -2659,6 +2692,7 @@ dev-python/wheel
 dev-python/whoosh
 dev-python/widgetsnbextension
 dev-python/wrapt
+dev-python/wsaccel
 dev-python/wsgiproxy2
 dev-python/wsproto
 dev-python/wxpython
@@ -2814,6 +2848,7 @@ dev-ruby/pg
 dev-ruby/pkg-config
 dev-ruby/power_assert
 dev-ruby/pry
+dev-ruby/psych
 dev-ruby/public_suffix
 dev-ruby/racc
 dev-ruby/rack
@@ -2858,6 +2893,7 @@ dev-ruby/sinatra
 dev-ruby/slim
 dev-ruby/sqlite3
 dev-ruby/stringex
+dev-ruby/stringio
 dev-ruby/strscan
 dev-ruby/syntax
 dev-ruby/sys-uname
@@ -2954,6 +2990,15 @@ dev-texlive/texlive-xetex
 dev-util/babeltrace
 dev-util/bats
 dev-util/boost-build
+dev-util/buildbot
+dev-util/buildbot-badges
+dev-util/buildbot-console-view
+dev-util/buildbot-grid-view
+dev-util/buildbot-pkg
+dev-util/buildbot-waterfall-view
+dev-util/buildbot-worker
+dev-util/buildbot-wsgi-dashboards
+dev-util/buildbot-www
 dev-util/byacc
 dev-util/cargo-c
 dev-util/catalyst
@@ -2993,6 +3038,7 @@ dev-util/gdbus-codegen
 dev-util/gengetopt
 dev-util/gi-docgen
 dev-util/git-delta
+dev-util/github-cli
 dev-util/glade
 dev-util/glib-utils
 dev-util/glslang
@@ -3599,6 +3645,7 @@ media-fonts/fantasque-sans-mono
 media-fonts/farsi-fonts
 media-fonts/fgdc-emergency
 media-fonts/fifth-leg
+media-fonts/fira-code
 media-fonts/fira-mono
 media-fonts/fira-sans
 media-fonts/font-adobe-100dpi
@@ -3734,6 +3781,7 @@ media-fonts/wqy-zenhei
 media-gfx/ansilove
 media-gfx/argyllcms
 media-gfx/asymptote
+media-gfx/cairosvg
 media-gfx/chafa
 media-gfx/ebdftopcf
 media-gfx/eog
@@ -3884,6 +3932,7 @@ media-libs/libffado
 media-libs/libfpx
 media-libs/libfreeaptx
 media-libs/libggi
+media-libs/libggiwmh
 media-libs/libgii
 media-libs/libglvnd
 media-libs/libgphoto2
@@ -4010,6 +4059,7 @@ media-libs/vulkan-layers
 media-libs/vulkan-loader
 media-libs/woff2
 media-libs/x264
+media-libs/x265
 media-libs/xine-lib
 media-libs/xvid
 media-libs/zimg
@@ -4038,6 +4088,7 @@ media-plugins/gst-plugins-gtk
 media-plugins/gst-plugins-jack
 media-plugins/gst-plugins-jpeg
 media-plugins/gst-plugins-lame
+media-plugins/gst-plugins-ldac
 media-plugins/gst-plugins-libav
 media-plugins/gst-plugins-libmms
 media-plugins/gst-plugins-libnice
@@ -4048,6 +4099,7 @@ media-plugins/gst-plugins-modplug
 media-plugins/gst-plugins-mpeg2dec
 media-plugins/gst-plugins-mpg123
 media-plugins/gst-plugins-mplex
+media-plugins/gst-plugins-openaptx
 media-plugins/gst-plugins-opus
 media-plugins/gst-plugins-oss
 media-plugins/gst-plugins-pulse
@@ -4106,6 +4158,7 @@ media-sound/sound-juicer
 media-sound/sox
 media-sound/timidity++
 media-sound/timidity-freepats
+media-sound/toolame
 media-sound/twolame
 media-sound/vorbis-tools
 media-sound/vorbisgain
@@ -4120,6 +4173,7 @@ media-video/gnome-video-effects
 media-video/libva-utils
 media-video/lsdvd
 media-video/mjpegtools
+media-video/mplayer
 media-video/mpv
 media-video/pipewire
 media-video/rav1e
@@ -4143,6 +4197,7 @@ net-analyzer/iptraf-ng
 net-analyzer/mtr
 net-analyzer/net-snmp
 net-analyzer/netcat
+net-analyzer/netperf
 net-analyzer/netselect
 net-analyzer/nmap
 net-analyzer/openbsd-netcat
@@ -4343,6 +4398,7 @@ net-misc/freerdp
 net-misc/gallery-dl
 net-misc/gnome-online-miners
 net-misc/gsasl
+net-misc/iperf
 net-misc/iputils
 net-misc/jwhois
 net-misc/libteam
@@ -4516,6 +4572,9 @@ sec-keys/openpgp-keys-mlichvar
 sec-keys/openpgp-keys-nmap
 sec-keys/openpgp-keys-notqmail
 sec-keys/openpgp-keys-oletange
+sec-keys/openpgp-keys-openssh
+sec-keys/openpgp-keys-openssl
+sec-keys/openpgp-keys-openwall
 sec-keys/openpgp-keys-openzfs
 sec-keys/openpgp-keys-python
 sec-keys/openpgp-keys-rust
@@ -4525,6 +4584,7 @@ sec-keys/openpgp-keys-teemutoivola
 sec-keys/openpgp-keys-terminator
 sec-keys/openpgp-keys-tor
 sec-keys/openpgp-keys-voikko
+sec-keys/openpgp-keys-weechat
 sec-keys/signify-keys-signify
 sys-apps/accountsservice
 sys-apps/ack
