@@ -833,15 +833,11 @@ app-i18n/scim-sunpinyin
 app-i18n/scim-tables
 app-i18n/scim-tomoe
 app-i18n/scim-uim
-app-i18n/skk-jisyo
 app-i18n/skkfep
-app-i18n/skkserv
-app-i18n/skktools
 app-i18n/tagainijisho
 app-i18n/tomoe
 app-i18n/tomoe-gtk
 app-i18n/transifex-client
-app-i18n/uim
 app-i18n/uim-tomoe-gtk
 app-i18n/xsunpinyin
 app-i18n/xvnkb
@@ -1220,6 +1216,7 @@ app-shells/ccsh
 app-shells/ctypes-sh
 app-shells/dsh
 app-shells/esh
+app-shells/gash
 app-shells/heirloom-sh
 app-shells/hstr
 app-shells/kshdb
@@ -1254,7 +1251,6 @@ app-text/apvlv
 app-text/asa
 app-text/bact
 app-text/barcode
-app-text/bdf2psf
 app-text/bibclean
 app-text/bibletime
 app-text/bibutils
@@ -1267,7 +1263,6 @@ app-text/catdoc
 app-text/cb2bib
 app-text/cedilla
 app-text/cherrytree
-app-text/cmark
 app-text/cmigemo
 app-text/code2html
 app-text/coolreader
@@ -1385,7 +1380,6 @@ app-text/vgrep
 app-text/vilistextum
 app-text/webgen
 app-text/wiki2beamer
-app-text/writerperfect
 app-text/wscr
 app-text/wv2
 app-text/xapers
@@ -1731,6 +1725,7 @@ dev-cpp/gconfmm
 dev-cpp/gstreamermm
 dev-cpp/gtksourceviewmm
 dev-cpp/gulrak-filesystem
+dev-cpp/highway
 dev-cpp/htmlcxx
 dev-cpp/json11
 dev-cpp/kokkos
@@ -1746,6 +1741,7 @@ dev-cpp/picojson
 dev-cpp/pngpp
 dev-cpp/pstreams
 dev-cpp/random123
+dev-cpp/sdbus-c++
 dev-cpp/sol2
 dev-cpp/sourcetrail
 dev-cpp/termcolor
@@ -1981,14 +1977,12 @@ dev-java/ant-swing
 dev-java/ant-testutil
 dev-java/apache-rat-core
 dev-java/apache-rat-tasks
-dev-java/apple-java-extensions-bin
 dev-java/aspectj
 dev-java/batik
 dev-java/bnd-junit
 dev-java/boot-bin
 dev-java/browserlauncher2
 dev-java/c3p0
-dev-java/cal10n
 dev-java/commons-cli
 dev-java/commons-daemon
 dev-java/commons-digester
@@ -2071,13 +2065,11 @@ dev-java/openjfx
 dev-java/pdf-renderer
 dev-java/rat
 dev-java/resin-servlet-api
-dev-java/rhino
 dev-java/rome
 dev-java/rxtx
 dev-java/sax
 dev-java/sbt
 dev-java/sbt-bin
-dev-java/slf4j-ext
 dev-java/spec-alpha
 dev-java/spin
 dev-java/swing-layout
@@ -2087,7 +2079,6 @@ dev-java/swingx-ws
 dev-java/swt
 dev-java/tomcat-native
 dev-java/typesafe-config
-dev-java/upnplib
 dev-java/validation-api
 dev-java/wsdl4j
 dev-java/xmlunit
@@ -2272,7 +2263,6 @@ dev-libs/libreport
 dev-libs/libserdes
 dev-libs/libserialport
 dev-libs/libstrl
-dev-libs/libstroke
 dev-libs/libstrophe
 dev-libs/libtecla
 dev-libs/libthreadar
@@ -2409,7 +2399,6 @@ dev-lisp/roswell
 dev-lisp/sbcl
 dev-lisp/trivial-gray-streams
 dev-lisp/uiop
-dev-lua/lualdap
 dev-lua/messagepack
 dev-lua/toluapp
 dev-perl/Ace
@@ -3730,7 +3719,6 @@ dev-php/phar-io-manifest
 dev-php/phar-io-version
 dev-php/phar-utils
 dev-php/phing
-dev-php/php-codebrowser
 dev-php/php-redmine-api
 dev-php/phpDocumentor
 dev-php/phpcov
@@ -3859,7 +3847,6 @@ dev-python/casttube
 dev-python/catkin_pkg
 dev-python/cattrs
 dev-python/cchardet
-dev-python/cerberus
 dev-python/cgroup-utils
 dev-python/chameleon
 dev-python/chart-studio
@@ -3938,20 +3925,16 @@ dev-python/findimports
 dev-python/fitsio
 dev-python/flake8-polyfill
 dev-python/flask-api
-dev-python/flask-babelex
 dev-python/flask-compress
 dev-python/flask-debug
 dev-python/flask-gravatar
 dev-python/flask-htmlmin
-dev-python/flask-mail
 dev-python/flask-migrate
 dev-python/flask-mongoengine
 dev-python/flask-nav
 dev-python/flask-paginate
 dev-python/flask-paranoid
 dev-python/flask-script
-dev-python/flask-security
-dev-python/flask-wtf
 dev-python/fleep
 dev-python/flit
 dev-python/flufl-bounce
@@ -4057,7 +4040,6 @@ dev-python/mkdocs-bootstrap
 dev-python/mkdocs-bootswatch
 dev-python/mmtf-python
 dev-python/mongoengine
-dev-python/mongomock
 dev-python/mpdlcd
 dev-python/mrcfile
 dev-python/munkres
@@ -4093,12 +4075,10 @@ dev-python/patiencediff
 dev-python/pbkdf2
 dev-python/pdm-pep517
 dev-python/pdoc3
-dev-python/peewee
 dev-python/pelican-minify
 dev-python/pendulum
 dev-python/pgspecial
 dev-python/pgzero
-dev-python/phonenumbers
 dev-python/picklemagic
 dev-python/pid
 dev-python/piexif
@@ -4116,7 +4096,6 @@ dev-python/pmw
 dev-python/podcastparser
 dev-python/podman-py
 dev-python/polygon
-dev-python/pony
 dev-python/pooch
 dev-python/poyo
 dev-python/progressbar
@@ -4261,7 +4240,6 @@ dev-python/ratelimit
 dev-python/rcssmin
 dev-python/reflink
 dev-python/requests-cache
-dev-python/requests-ntlm
 dev-python/requests-oauthlib
 dev-python/requests_download
 dev-python/requests_pkcs12
@@ -4276,7 +4254,6 @@ dev-python/rpy
 dev-python/rpyc
 dev-python/sabyenc
 dev-python/seaborn
-dev-python/sentinels
 dev-python/serverfiles
 dev-python/setuptools_rust
 dev-python/sexpdata
@@ -4295,8 +4272,6 @@ dev-python/snaketrace
 dev-python/snapshottest
 dev-python/socketio-client
 dev-python/socketio-client-nexus
-dev-python/socketpool
-dev-python/speaklater
 dev-python/sphinx-jinja
 dev-python/sphinx-multiversion
 dev-python/sphinx-panels
@@ -4325,8 +4300,8 @@ dev-python/tekore
 dev-python/terminaltables
 dev-python/test_server
 dev-python/text-unidecode
+dev-python/textX
 dev-python/textdistance
-dev-python/textx
 dev-python/three-merge
 dev-python/thrift
 dev-python/thriftpy2
@@ -4363,7 +4338,6 @@ dev-python/whatever
 dev-python/whichcraft
 dev-python/whisper
 dev-python/ws4py
-dev-python/wtforms
 dev-python/wurlitzer
 dev-python/www-authenticate
 dev-python/xdoctest
@@ -4375,13 +4349,13 @@ dev-python/yaswfp
 dev-python/zconfig
 dev-python/zeep
 dev-python/zope-deprecation
-dev-python/zxcvbn
 dev-qt/qt-creator
 dev-qt/qtdiag
 dev-qt/qtplugininfo
 dev-qt/qtquicktimeline
 dev-qt/qtserialbus
 dev-qt/qtstyleplugins
+dev-qt/qtwaylandscanner
 dev-qt/qtwebview
 dev-ruby/GeoRuby
 dev-ruby/acme-client
@@ -4436,7 +4410,6 @@ dev-ruby/cliver
 dev-ruby/cmdparse
 dev-ruby/coercible
 dev-ruby/color
-dev-ruby/colored
 dev-ruby/colored2
 dev-ruby/colorize
 dev-ruby/columnize
@@ -4445,7 +4418,6 @@ dev-ruby/commander
 dev-ruby/coolio
 dev-ruby/countdownlatch
 dev-ruby/creole
-dev-ruby/cri
 dev-ruby/css_parser
 dev-ruby/curb
 dev-ruby/daemon_controller
@@ -4455,21 +4427,13 @@ dev-ruby/database_cleaner-active_record
 dev-ruby/database_cleaner-core
 dev-ruby/date_validator
 dev-ruby/dbf
-dev-ruby/ddmemoize
-dev-ruby/ddmetrics
-dev-ruby/ddplugin
 dev-ruby/debug_inspector
-dev-ruby/delayer
-dev-ruby/delayer-deferred
 dev-ruby/dependor
 dev-ruby/deprecated
 dev-ruby/descendants_tracker
-dev-ruby/diva
 dev-ruby/dnsruby
-dev-ruby/docile
 dev-ruby/dotenv
 dev-ruby/dust
-dev-ruby/ecma-re-validator
 dev-ruby/ed25519
 dev-ruby/elasticsearch
 dev-ruby/elasticsearch-api
@@ -4499,7 +4463,6 @@ dev-ruby/flickraw
 dev-ruby/flog
 dev-ruby/font-awesome-rails
 dev-ruby/forgery
-dev-ruby/fuubar
 dev-ruby/gettext_i18n_rails
 dev-ruby/gh
 dev-ruby/gist
@@ -4509,7 +4472,6 @@ dev-ruby/google-protobuf
 dev-ruby/gpgme
 dev-ruby/gruff
 dev-ruby/haml-rails
-dev-ruby/hamster
 dev-ruby/hashicorp-checkpoint
 dev-ruby/hashr
 dev-ruby/hiera-eyaml
@@ -4525,7 +4487,6 @@ dev-ruby/htmlentities
 dev-ruby/http-accept
 dev-ruby/httparty
 dev-ruby/httpauth
-dev-ruby/idn-ruby
 dev-ruby/image_processing
 dev-ruby/imagesize
 dev-ruby/inflecto
@@ -4535,7 +4496,6 @@ dev-ruby/iobuffer
 dev-ruby/jbuilder
 dev-ruby/jquery-ui-rails
 dev-ruby/jsobfu
-dev-ruby/json_schema
 dev-ruby/jwt
 dev-ruby/kirbybase
 dev-ruby/kissfft
@@ -4555,7 +4515,6 @@ dev-ruby/marcel
 dev-ruby/mash
 dev-ruby/mecab-ruby
 dev-ruby/mechanize
-dev-ruby/memoist
 dev-ruby/memoizable
 dev-ruby/memoize
 dev-ruby/metasm
@@ -4563,7 +4522,6 @@ dev-ruby/mimemagic
 dev-ruby/mini_magick
 dev-ruby/minispec-metadata
 dev-ruby/mixlib-shellout
-dev-ruby/moneta
 dev-ruby/mqtt
 dev-ruby/msgpack
 dev-ruby/multi_xml
@@ -4585,7 +4543,6 @@ dev-ruby/network_interface
 dev-ruby/niceogiri
 dev-ruby/nokogumbo
 dev-ruby/ntlm-http
-dev-ruby/oauth
 dev-ruby/oauth2
 dev-ruby/octokit
 dev-ruby/omniauth
@@ -4597,7 +4554,6 @@ dev-ruby/origin
 dev-ruby/ox
 dev-ruby/packetfu
 dev-ruby/paint
-dev-ruby/parallel
 dev-ruby/paramesan
 dev-ruby/parser
 dev-ruby/path_expander
@@ -4605,7 +4561,6 @@ dev-ruby/pcaprub
 dev-ruby/permutation
 dev-ruby/pg_array_parser
 dev-ruby/plist
-dev-ruby/pluggaloid
 dev-ruby/podcast
 dev-ruby/polyglot
 dev-ruby/posix-spawn
@@ -4627,12 +4582,9 @@ dev-ruby/rbpdf
 dev-ruby/rbpdf-font
 dev-ruby/rbst
 dev-ruby/rbtree
-dev-ruby/rcairo
 dev-ruby/rchardet
 dev-ruby/rdtool
 dev-ruby/recog
-dev-ruby/red-colors
-dev-ruby/ref
 dev-ruby/request_store
 dev-ruby/rest-client
 dev-ruby/rinku
@@ -4649,9 +4601,6 @@ dev-ruby/rspec-collection_matchers
 dev-ruby/rspec-json_expectations
 dev-ruby/rspec-rails
 dev-ruby/rspec-stubbed_env
-dev-ruby/rspectacular
-dev-ruby/ruby-atk
-dev-ruby/ruby-cairo-gobject
 dev-ruby/ruby-clutter
 dev-ruby/ruby-clutter-gdk
 dev-ruby/ruby-clutter-gstreamer
@@ -4661,17 +4610,12 @@ dev-ruby/ruby-elf
 dev-ruby/ruby-feedparser
 dev-ruby/ruby-filemagic
 dev-ruby/ruby-gdk3
-dev-ruby/ruby-gdkpixbuf2
 dev-ruby/ruby-gegl
-dev-ruby/ruby-gio2
-dev-ruby/ruby-glib2
 dev-ruby/ruby-gnome2
 dev-ruby/ruby-gnumeric
-dev-ruby/ruby-gobject-introspection
 dev-ruby/ruby-goffice
 dev-ruby/ruby-gsf
 dev-ruby/ruby-gstreamer
-dev-ruby/ruby-gtk2
 dev-ruby/ruby-gtk3
 dev-ruby/ruby-gtksourceview
 dev-ruby/ruby-gtksourceview3
@@ -4686,10 +4630,7 @@ dev-ruby/ruby-oembed
 dev-ruby/ruby-ole
 dev-ruby/ruby-opengl
 dev-ruby/ruby-openid
-dev-ruby/ruby-pango
-dev-ruby/ruby-poppler
 dev-ruby/ruby-prof
-dev-ruby/ruby-progressbar
 dev-ruby/ruby-romkan
 dev-ruby/ruby-rsvg
 dev-ruby/ruby-sdl
@@ -4706,7 +4647,6 @@ dev-ruby/ruby_gntp
 dev-ruby/ruby_parser
 dev-ruby/ruby_smb
 dev-ruby/rubyntlm
-dev-ruby/rubypants
 dev-ruby/rubytter
 dev-ruby/sassc-rails
 dev-ruby/sawyer
@@ -4721,13 +4661,10 @@ dev-ruby/sigar
 dev-ruby/sigdump
 dev-ruby/simple-rss
 dev-ruby/simple_oauth
-dev-ruby/simplecov
-dev-ruby/simplecov-html
 dev-ruby/simpleidn
 dev-ruby/sinatra-partial
 dev-ruby/six
 dev-ruby/slop
-dev-ruby/slow_enumerator_tools
 dev-ruby/sorted_set
 dev-ruby/sparklines
 dev-ruby/spreadsheet
@@ -4740,7 +4677,6 @@ dev-ruby/stomp
 dev-ruby/strptime
 dev-ruby/subexec
 dev-ruby/syslogger
-dev-ruby/systemu
 dev-ruby/text-hyphen
 dev-ruby/textpow
 dev-ruby/tidy_table
@@ -4752,22 +4688,16 @@ dev-ruby/transaction-simple
 dev-ruby/travis
 dev-ruby/treetop
 dev-ruby/trollop
-dev-ruby/tty-command
 dev-ruby/tty-file
-dev-ruby/tty-platform
-dev-ruby/tty-which
 dev-ruby/turbolinks
 dev-ruby/turbolinks-source
 dev-ruby/twitter
-dev-ruby/twitter-text
-dev-ruby/typed-array
 dev-ruby/typhoeus
 dev-ruby/uconv
 dev-ruby/ultraviolet
 dev-ruby/uuidtools
 dev-ruby/vagrant_cloud
 dev-ruby/vcard
-dev-ruby/vcr
 dev-ruby/virtus
 dev-ruby/vlad
 dev-ruby/warden
@@ -4877,7 +4807,6 @@ dev-util/App-SVN-Bisect
 dev-util/FlameGraph
 dev-util/Tensile
 dev-util/abi-compliance-checker
-dev-util/abi-dumper
 dev-util/ald
 dev-util/amtterm
 dev-util/android-ndk
@@ -4949,8 +4878,6 @@ dev-util/difffilter
 dev-util/diffuse
 dev-util/dirdiff
 dev-util/dissembler
-dev-util/distro-info
-dev-util/distro-info-data
 dev-util/dmake
 dev-util/dput-ng
 dev-util/drone
@@ -5077,7 +5004,6 @@ dev-util/shc
 dev-util/shellcheck
 dev-util/shelltestrunner
 dev-util/shtool
-dev-util/shunit2
 dev-util/smem
 dev-util/spirv-llvm-translator
 dev-util/squashdelta
@@ -5106,7 +5032,6 @@ dev-util/vbindiff
 dev-util/vint
 dev-util/visual-regexp
 dev-util/visualvm
-dev-util/vtable-dumper
 dev-util/wasmer
 dev-util/watchman
 dev-util/webhook
@@ -5190,6 +5115,7 @@ games-action/deathchase3d
 games-action/descent2-vertigo
 games-action/descent3
 games-action/descent3-demo
+games-action/extreme-tuxracer
 games-action/fakk2
 games-action/formido
 games-action/garden
@@ -5798,7 +5724,6 @@ games-strategy/scorched3d
 games-strategy/settlers-2-gold-data
 games-strategy/spaz
 games-strategy/tornado
-games-strategy/triplea
 games-strategy/ufoai
 games-strategy/uqm
 games-strategy/war1gus
@@ -5855,6 +5780,7 @@ gnome-extra/evolution-ews
 gnome-extra/filemanager-actions
 gnome-extra/gconf-editor
 gnome-extra/gnome-boxes
+gnome-extra/gnome-calculator
 gnome-extra/gnome-commander
 gnome-extra/gnome-directory-thumbnailer
 gnome-extra/gnome-documents
@@ -6042,7 +5968,6 @@ media-fonts/tengwar-fonts
 media-fonts/termsyn
 media-fonts/umeplus-fonts
 media-fonts/unfonts-extra
-media-fonts/unifont
 media-fonts/urwvn-fonts
 media-fonts/vdrsymbols-ttf
 media-fonts/viga
@@ -6251,7 +6176,6 @@ media-libs/libbsb
 media-libs/libcdaudio
 media-libs/libclastfm
 media-libs/libdvd-audio
-media-libs/libeot
 media-libs/libextractor
 media-libs/libfame
 media-libs/libfishsound
@@ -6264,6 +6188,7 @@ media-libs/libifp
 media-libs/libinsane
 media-libs/libirman
 media-libs/libjsw
+media-libs/libjxl
 media-libs/liblastfm
 media-libs/liblingoteach
 media-libs/liblo
@@ -6777,7 +6702,6 @@ media-sound/rexima
 media-sound/rip
 media-sound/ripperx
 media-sound/rosegarden
-media-sound/rplay
 media-sound/saydate
 media-sound/schismtracker
 media-sound/scmpc
@@ -6995,7 +6919,6 @@ media-video/x264-encoder
 media-video/xvattr
 media-video/xvid4conf
 media-video/yle-dl
-net-analyzer/2ping
 net-analyzer/alive
 net-analyzer/angst
 net-analyzer/apinger
@@ -7307,6 +7230,7 @@ net-im/biboumi
 net-im/bitlbee
 net-im/bitlbee-facebook
 net-im/bitlbee-steam
+net-im/cawbird
 net-im/centerim
 net-im/choqok
 net-im/corebird
@@ -7592,6 +7516,7 @@ net-misc/gvrpcd
 net-misc/haeredes
 net-misc/hashcash
 net-misc/hath
+net-misc/htail
 net-misc/htbinit
 net-misc/httpie
 net-misc/httpstat
@@ -7626,7 +7551,6 @@ net-misc/mcproxy
 net-misc/megatools
 net-misc/mico
 net-misc/midentd
-net-misc/mikutter
 net-misc/minidlna
 net-misc/minissdpd
 net-misc/miniupnpd
@@ -9137,12 +9061,10 @@ sys-process/unixtop
 sys-process/watchpid
 sys-process/xjobs
 virtual/commonlisp
-virtual/dist-kernel
 virtual/gnustep-back
 virtual/ooo
 virtual/opencl
 virtual/perl6
-virtual/skkserv
 virtual/wine
 www-apache/anyterm
 www-apache/libapreq2
@@ -9213,11 +9135,6 @@ www-apps/moodle
 www-apps/mythweb
 www-apps/nanoblogger
 www-apps/nanoc
-www-apps/nanoc-checking
-www-apps/nanoc-cli
-www-apps/nanoc-core
-www-apps/nanoc-deploying
-www-apps/nanoc-spec
 www-apps/nextcloud-notify_push
 www-apps/nikola
 www-apps/owncloud
@@ -9231,6 +9148,7 @@ www-apps/rocketwiki-lqfb
 www-apps/roundup
 www-apps/rt
 www-apps/rutorrent
+www-apps/sfpg
 www-apps/trickster
 www-apps/tt-rss
 www-apps/webdavcgi
@@ -9277,7 +9195,6 @@ www-plugins/chrome-binary-plugins
 www-plugins/gosuslugi-plugin
 www-plugins/lightspark
 www-plugins/passff-host
-www-servers/adsf
 www-servers/boa
 www-servers/caddy
 www-servers/fnord
@@ -9516,7 +9433,6 @@ x11-misc/snixembed
 x11-misc/spacefm
 x11-misc/splatmoji
 x11-misc/spnavcfg
-x11-misc/stalonetray
 x11-misc/sunflower
 x11-misc/svkbd
 x11-misc/sw-notify-send
@@ -9568,7 +9484,6 @@ x11-misc/xkbd
 x11-misc/xkblayout-state
 x11-misc/xkbset
 x11-misc/xkeycaps
-x11-misc/xlockmore
 x11-misc/xmobar
 x11-misc/xmountains
 x11-misc/xnee
@@ -9749,7 +9664,6 @@ x11-terms/kitty-shell-integration
 x11-terms/kitty-terminfo
 x11-terms/kterm
 x11-terms/lilyterm
-x11-terms/mlterm
 x11-terms/roxterm
 x11-terms/sakura
 x11-terms/terminator
@@ -9768,11 +9682,6 @@ x11-themes/fedora-backgrounds
 x11-themes/flatsvg
 x11-themes/fluent-icon-theme
 x11-themes/fluxbox-styles-fluxmod
-x11-themes/fvwm-crystal
-x11-themes/fvwm-themes
-x11-themes/fvwm-themes-extra
-x11-themes/fvwm_icons
-x11-themes/fvwm_sounds
 x11-themes/gargantuan-icon-theme
 x11-themes/gartoon
 x11-themes/gartoon-redux
@@ -9848,7 +9757,6 @@ x11-wm/ctwm
 x11-wm/e16
 x11-wm/echinus
 x11-wm/evilwm
-x11-wm/fvwm
 x11-wm/goomwwm
 x11-wm/herbstluftwm
 x11-wm/icewm

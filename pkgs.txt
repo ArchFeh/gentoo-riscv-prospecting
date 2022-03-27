@@ -2329,6 +2329,7 @@ app-shells/dsh
 app-shells/esh
 app-shells/fish
 app-shells/fzf
+app-shells/gash
 app-shells/gentoo-bashcomp
 app-shells/gentoo-zsh-completions
 app-shells/heirloom-sh
@@ -3033,6 +3034,7 @@ dev-cpp/gtest
 dev-cpp/gtkmm
 dev-cpp/gtksourceviewmm
 dev-cpp/gulrak-filesystem
+dev-cpp/highway
 dev-cpp/htmlcxx
 dev-cpp/json11
 dev-cpp/kokkos
@@ -3063,6 +3065,7 @@ dev-cpp/range-v3
 dev-cpp/rapidyaml
 dev-cpp/robin-hood-hashing
 dev-cpp/robin-map
+dev-cpp/sdbus-c++
 dev-cpp/sol2
 dev-cpp/sourcetrail
 dev-cpp/sparsehash
@@ -3367,7 +3370,6 @@ dev-java/antlr-tool
 dev-java/aopalliance
 dev-java/apache-rat-core
 dev-java/apache-rat-tasks
-dev-java/apple-java-extensions-bin
 dev-java/asm
 dev-java/asm-analysis
 dev-java/asm-commons
@@ -3643,7 +3645,6 @@ dev-java/tomcat-native
 dev-java/tomcat-servlet-api
 dev-java/treelayout
 dev-java/typesafe-config
-dev-java/upnplib
 dev-java/validation-api
 dev-java/velocity
 dev-java/woodstox-core
@@ -4367,6 +4368,7 @@ dev-lua/lua-bit32
 dev-lua/lua-cjson
 dev-lua/lua-openssl
 dev-lua/lua-term
+dev-lua/lua-unbound
 dev-lua/lua-utf8
 dev-lua/lua-zlib
 dev-lua/lua_cliargs
@@ -4392,6 +4394,7 @@ dev-lua/mediator_lua
 dev-lua/messagepack
 dev-lua/mpack
 dev-lua/penlight
+dev-lua/readline
 dev-lua/say
 dev-lua/toluapp
 dev-perl/Ace
@@ -6283,7 +6286,6 @@ dev-php/phar-io-manifest
 dev-php/phar-io-version
 dev-php/phar-utils
 dev-php/phing
-dev-php/php-codebrowser
 dev-php/php-redmine-api
 dev-php/phpDocumentor
 dev-php/phpcov
@@ -6345,6 +6347,7 @@ dev-php/zetacomponents-Base
 dev-php/zetacomponents-ConsoleTools
 dev-python/3to2
 dev-python/APScheduler
+dev-python/Arpeggio
 dev-python/Babel
 dev-python/BitVector
 dev-python/CppHeaderParser
@@ -6414,7 +6417,6 @@ dev-python/argh
 dev-python/argon2-cffi
 dev-python/argon2-cffi-bindings
 dev-python/argparse-manpage
-dev-python/arpeggio
 dev-python/arrow
 dev-python/asgiref
 dev-python/asn1crypto
@@ -7069,6 +7071,7 @@ dev-python/notebook
 dev-python/notify2
 dev-python/nototools
 dev-python/nptyping
+dev-python/nspektr
 dev-python/ntlm-auth
 dev-python/ntplib
 dev-python/nuitka
@@ -7648,7 +7651,6 @@ dev-python/sniffio
 dev-python/snowballstemmer
 dev-python/socketio-client
 dev-python/socketio-client-nexus
-dev-python/socketpool
 dev-python/socksio
 dev-python/sortedcontainers
 dev-python/soupsieve
@@ -7752,9 +7754,9 @@ dev-python/testresources
 dev-python/testscenarios
 dev-python/testtools
 dev-python/text-unidecode
+dev-python/textX
 dev-python/textdistance
 dev-python/texttable
-dev-python/textx
 dev-python/threadpoolctl
 dev-python/three-merge
 dev-python/thrift
@@ -7813,6 +7815,7 @@ dev-python/unittest-or-fail
 dev-python/untangle
 dev-python/uranium
 dev-python/urdf_parser_py
+dev-python/uri_template
 dev-python/uritemplate
 dev-python/url-normalize
 dev-python/urlgrabber
@@ -7961,6 +7964,7 @@ dev-qt/qttest
 dev-qt/qttranslations
 dev-qt/qtvirtualkeyboard
 dev-qt/qtwayland
+dev-qt/qtwaylandscanner
 dev-qt/qtwebchannel
 dev-qt/qtwebengine
 dev-qt/qtwebsockets
@@ -9982,7 +9986,6 @@ games-strategy/settlers-2-gold-data
 games-strategy/seven-kingdoms
 games-strategy/spaz
 games-strategy/tornado
-games-strategy/triplea
 games-strategy/ufoai
 games-strategy/uqm
 games-strategy/war1gus
@@ -11404,6 +11407,7 @@ media-libs/libiptcdata
 media-libs/libirman
 media-libs/libjpeg-turbo
 media-libs/libjsw
+media-libs/libjxl
 media-libs/libkate
 media-libs/libkeyfinder
 media-libs/liblastfm
@@ -12875,6 +12879,7 @@ net-im/biboumi
 net-im/bitlbee
 net-im/bitlbee-facebook
 net-im/bitlbee-steam
+net-im/cawbird
 net-im/centerim
 net-im/choqok
 net-im/corebird
@@ -13373,6 +13378,7 @@ net-misc/gwhois
 net-misc/haeredes
 net-misc/hashcash
 net-misc/hath
+net-misc/htail
 net-misc/htbinit
 net-misc/htpdate
 net-misc/httpie
@@ -14693,9 +14699,11 @@ sec-keys/openpgp-keys-django
 sec-keys/openpgp-keys-gentoo-auth
 sec-keys/openpgp-keys-gentoo-release
 sec-keys/openpgp-keys-gnupg
+sec-keys/openpgp-keys-gnutls
 sec-keys/openpgp-keys-jedisct1
 sec-keys/openpgp-keys-kernel
 sec-keys/openpgp-keys-kovidgoyal
+sec-keys/openpgp-keys-libarchive
 sec-keys/openpgp-keys-libidn
 sec-keys/openpgp-keys-libvirt
 sec-keys/openpgp-keys-linuxcontainers
@@ -14709,9 +14717,11 @@ sec-keys/openpgp-keys-openssh
 sec-keys/openpgp-keys-openssl
 sec-keys/openpgp-keys-openwall
 sec-keys/openpgp-keys-openzfs
+sec-keys/openpgp-keys-processone
 sec-keys/openpgp-keys-python
 sec-keys/openpgp-keys-rust
 sec-keys/openpgp-keys-signify
+sec-keys/openpgp-keys-sudo
 sec-keys/openpgp-keys-tcpdump
 sec-keys/openpgp-keys-teemutoivola
 sec-keys/openpgp-keys-terminator
@@ -16181,6 +16191,7 @@ www-apps/roundup
 www-apps/rt
 www-apps/rutorrent
 www-apps/selfoss
+www-apps/sfpg
 www-apps/trickster
 www-apps/tt-rss
 www-apps/webdavcgi
