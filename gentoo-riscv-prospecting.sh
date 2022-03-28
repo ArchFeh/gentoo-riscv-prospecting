@@ -7,8 +7,8 @@ eix -# --in-overlay gentoo > pkgs.txt
 rm -rf 0_riscv.txt 1_arm64.txt 1_arm64_ver.txt 2_none.txt
 ./keyworded pkgs.txt
 
-rm full.txt
-for pkg in $(cat 1_arm64.txt 2_none.txt | sort | uniq); do
+rm -f full.txt
+for pkg in $(cat 1_arm64.txt 2_none.txt | grep -Ev '(acct-user|acct-group)' | sort | uniq); do
     dep_pkgs=$(zbt ls -p default/linux/riscv/20.0/rv64gc/lp64d/desktop/plasma/systemd $pkg)
     dep_pkgs_cnt=$(echo "$dep_pkgs" | wc -l)
     dep_pkgs_oneline=$(echo "$dep_pkgs" | tr '\n' ' ')
