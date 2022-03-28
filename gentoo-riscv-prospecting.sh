@@ -2,19 +2,12 @@
 
 set -xe
 
-if [ -d gentoo/.git ]; then
-    git -C gentoo pull
-else
-    git clone https://github.com/gentoo/gentoo.git
-fi
-
-GENTOO_GIT_REPO="$(realpath ./gentoo)"
-
 eix -# --in-overlay gentoo > pkgs.txt
 
-rm -rf 0_riscv.txt 1_arm64.txt 1_arm64_ver.txt 2_none.txt full.txt
+rm -rf 0_riscv.txt 1_arm64.txt 1_arm64_ver.txt 2_none.txt
 ./keyworded pkgs.txt
 
+rm full.txt
 for pkg in $(cat 1_arm64.txt 2_none.txt | sort | uniq); do
     dep_pkgs=$(zbt ls -p default/linux/riscv/20.0/rv64gc/lp64d/desktop/plasma/systemd $pkg)
     dep_pkgs_cnt=$(echo "$dep_pkgs" | wc -l)
@@ -25,9 +18,10 @@ done
 
 sort -rnk2 -o full.txt full.txt
 
-RE_MASK='(acct-user|acct-group|dev-java|dev-haskell|dev-ros|dev-ml|ros-meta|qtwebengine)'
-cat full.txt | grep -Ev "$RE_MASK" > todo.txt
+RE_MASK=
+cat full.txt | grep -Ev '(acct-user|acct-group|dev-java|dev-haskell|dev-ros|dev-ml|ros-meta|qtwebengine)' > todo.txt
+cat todo.txt | grep -Ev '(^dev-haskell|^dev-perl|^dev-php|^dev-ruby|^app-xemacs|^sci-biology|OpenStack)'  > todo2.txt
 
-git add 0_riscv.txt 1_arm64.txt 1_arm64_ver.txt 2_none.txt pkgs.txt full.txt
+git add 0_riscv.txt 1_arm64.txt 1_arm64_ver.txt 2_none.txt pkgs.txt full.txt todo.txt todo2.txt
 git commit -m "update $(date '+%F %H:%M')"
 git push

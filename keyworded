@@ -16,6 +16,7 @@ def keyworded(atom, arch):
         print("{}", portage.best(matches))
 
     all_keys= settings.get('KEYWORDS', '').split()
+    print(all_keys)
     for kw in [ arch, '~'+arch ]:
         if kw in all_keys:
             logfile(atom, "0_riscv.txt")
@@ -39,4 +40,5 @@ sys.exit(0)
 
 #keyworded('app-i18n/man-pages-zh_CN', 'riscv')
 #keyworded('app-editors/vim', 'riscv')
+#keyworded('dev-util/buildbot', 'riscv')
 
