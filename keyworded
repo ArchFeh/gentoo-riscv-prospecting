@@ -36,3 +36,7 @@ for name in iter(lambda: myf.readline(), ''):
 
 myf.close()
 sys.exit(0)
+
+#keyworded('app-i18n/man-pages-zh_CN', 'riscv')
+#keyworded('app-editors/vim', 'riscv')
+
