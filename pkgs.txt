@@ -148,6 +148,7 @@ acct-group/h2o
 acct-group/haclient
 acct-group/haproxy
 acct-group/havp
+acct-group/headscale
 acct-group/heat
 acct-group/hsqldb
 acct-group/http
@@ -182,6 +183,7 @@ acct-group/kube-controller-manager
 acct-group/kube-scheduler
 acct-group/kvm
 acct-group/ldap
+acct-group/libreoffice
 acct-group/libvirt
 acct-group/lightdm
 acct-group/lighttpd
@@ -596,6 +598,7 @@ acct-user/h2o
 acct-user/hacluster
 acct-user/haproxy
 acct-user/havp
+acct-user/headscale
 acct-user/heat
 acct-user/hsqldb
 acct-user/http
@@ -626,6 +629,8 @@ acct-user/kube-apiserver
 acct-user/kube-controller-manager
 acct-user/kube-scheduler
 acct-user/ldap
+acct-user/libreoffice
+acct-user/lightdm
 acct-user/lighttpd
 acct-user/litecoin
 acct-user/lldpd
@@ -645,6 +650,7 @@ acct-user/minbif
 acct-user/minecraft
 acct-user/minetest
 acct-user/minidlna
+acct-user/miniflux
 acct-user/minio
 acct-user/mogile
 acct-user/mongodb
@@ -669,6 +675,7 @@ acct-user/netbox
 acct-user/netdata
 acct-user/netperf
 acct-user/neutron
+acct-user/nginx
 acct-user/nginx-vts-exporter
 acct-user/ngircd
 acct-user/ngrep
@@ -763,6 +770,7 @@ acct-user/rrdcached
 acct-user/rslsync
 acct-user/rspamd
 acct-user/rstudio-server
+acct-user/rt
 acct-user/rtkit
 acct-user/rundeck
 acct-user/rwhoisd
@@ -973,7 +981,6 @@ app-admin/github-backup-utils
 app-admin/gixy
 app-admin/gkrellm
 app-admin/gnome-abrt
-app-admin/gnome-system-log
 app-admin/go-updater
 app-admin/gopass
 app-admin/gopass-hibp
@@ -1083,6 +1090,7 @@ app-admin/terraform
 app-admin/testdisk
 app-admin/tmpreaper
 app-admin/tmpwatch
+app-admin/tpm
 app-admin/tripwire
 app-admin/ulogd
 app-admin/undertaker-scripts
@@ -1111,6 +1119,7 @@ app-arch/bloscpack
 app-arch/brotli
 app-arch/bsdsfv
 app-arch/bzip2
+app-arch/bzip3
 app-arch/cabextract
 app-arch/cksfv
 app-arch/clzip
@@ -1268,6 +1277,7 @@ app-benchmarks/iozone
 app-benchmarks/libc-bench
 app-benchmarks/nbench
 app-benchmarks/pipebench
+app-benchmarks/pmbw
 app-benchmarks/ramspeed
 app-benchmarks/siege
 app-benchmarks/stress
@@ -1344,6 +1354,7 @@ app-containers/docker-registry
 app-containers/docker-swarm
 app-containers/flannel
 app-containers/go-secbench
+app-containers/grype
 app-containers/img
 app-containers/k3d
 app-containers/kompose
@@ -1359,6 +1370,7 @@ app-containers/sen
 app-containers/skopeo
 app-containers/slirp4netns
 app-containers/snapd
+app-containers/syft
 app-containers/umoci
 app-crypt/acme
 app-crypt/acme-sh
@@ -1473,7 +1485,6 @@ app-crypt/scdrand
 app-crypt/scrypt
 app-crypt/scute
 app-crypt/seahorse
-app-crypt/seahorse-sharing
 app-crypt/sequoia-sq
 app-crypt/sequoia-sqv
 app-crypt/shash
@@ -1727,6 +1738,7 @@ app-dicts/sword-BasHautin
 app-dicts/sword-BeaMRK
 app-dicts/sword-Bela
 app-dicts/sword-BretonNT
+app-dicts/sword-BulCarigradNT
 app-dicts/sword-BulVeren
 app-dicts/sword-BurCBCM
 app-dicts/sword-BurJudson
@@ -1796,11 +1808,13 @@ app-dicts/sword-FinPR92
 app-dicts/sword-FinRK
 app-dicts/sword-FinSTLK2017
 app-dicts/sword-Finney
+app-dicts/sword-FreAug
 app-dicts/sword-FreBBB
 app-dicts/sword-FreBDM1707
 app-dicts/sword-FreBDM1744
 app-dicts/sword-FreBailly
 app-dicts/sword-FreCJE
+app-dicts/sword-FreChry
 app-dicts/sword-FreCrampon
 app-dicts/sword-FreDAW
 app-dicts/sword-FreGBM
@@ -1894,7 +1908,7 @@ app-dicts/sword-KhmerNT
 app-dicts/sword-KingComm
 app-dicts/sword-KorHKJV
 app-dicts/sword-KorRV
-app-dicts/sword-KtuVb
+app-dicts/sword-KtuVB
 app-dicts/sword-LEB
 app-dicts/sword-LITV
 app-dicts/sword-LO
@@ -2210,6 +2224,7 @@ app-editors/xmlcopyeditor
 app-editors/xvile
 app-editors/yudit
 app-editors/zile
+app-emacs/ace-window
 app-emacs/actionscript-mode
 app-emacs/adaptive-wrap
 app-emacs/all-the-icons
@@ -2218,6 +2233,7 @@ app-emacs/all-the-icons-ibuffer
 app-emacs/all-the-icons-ivy-rich
 app-emacs/amx
 app-emacs/analog
+app-emacs/anaphora
 app-emacs/ansi
 app-emacs/apache-mode
 app-emacs/apel
@@ -2229,18 +2245,25 @@ app-emacs/autoconf-mode
 app-emacs/avy
 app-emacs/basic-toolkit
 app-emacs/bbdb
+app-emacs/biblio
 app-emacs/binclock
+app-emacs/bind-chord
+app-emacs/bind-key
 app-emacs/bison-mode
 app-emacs/blogmax
 app-emacs/bm
+app-emacs/bnf-mode
 app-emacs/bongo
 app-emacs/boogie-friends
 app-emacs/boxquote
 app-emacs/browse-kill-ring
 app-emacs/bubblet
 app-emacs/buffer-extension
+app-emacs/bui
 app-emacs/buttercup
 app-emacs/calfw
+app-emacs/cask
+app-emacs/cfrs
 app-emacs/chess
 app-emacs/circe
 app-emacs/cldoc
@@ -2248,6 +2271,8 @@ app-emacs/cmake-font-lock
 app-emacs/color-browser
 app-emacs/color-moccur
 app-emacs/color-theme
+app-emacs/commander
+app-emacs/commenter
 app-emacs/company-coq
 app-emacs/company-math
 app-emacs/company-mode
@@ -2261,51 +2286,68 @@ app-emacs/csharp-mode
 app-emacs/css-mode
 app-emacs/css-sort-buffer
 app-emacs/csv-mode
+app-emacs/ctable
 app-emacs/cycle-buffer
 app-emacs/d-mode
+app-emacs/dap-mode
 app-emacs/dash
 app-emacs/dashboard
 app-emacs/ddskk
+app-emacs/deferred
 app-emacs/deft
 app-emacs/desktop+
 app-emacs/develock
 app-emacs/df-mode
 app-emacs/dictionary
 app-emacs/diff-hl
+app-emacs/diminish
 app-emacs/dircolors
 app-emacs/dired-sort-menu
 app-emacs/distel
 app-emacs/dockerfile-mode
 app-emacs/doctest-mode
+app-emacs/doom-themes
 app-emacs/doxymacs
 app-emacs/dropdown-list
 app-emacs/dts-mode
 app-emacs/dune-format
+app-emacs/ebib
 app-emacs/ebuild-mode
 app-emacs/ebuild-run-mode
 app-emacs/ecb
+app-emacs/ecukes
 app-emacs/edb
 app-emacs/edit-list
 app-emacs/edit-server
 app-emacs/editorconfig-emacs
 app-emacs/eglot
 app-emacs/el-mock
+app-emacs/eldev
+app-emacs/elixir-mode
+app-emacs/elpher
 app-emacs/elpy
 app-emacs/elscreen
 app-emacs/emacs-common
 app-emacs/emacs-daemon
+app-emacs/emacs-ipython-notebook
 app-emacs/emacs-jabber
 app-emacs/emacs-w3m
 app-emacs/emacs-wget
 app-emacs/emhacks
 app-emacs/emms
 app-emacs/emojify
+app-emacs/epc
 app-emacs/epl
 app-emacs/erobot
+app-emacs/ert-async
+app-emacs/ert-runner
 app-emacs/eselect-mode
+app-emacs/espuds
 app-emacs/ess
+app-emacs/esup
 app-emacs/evil
 app-emacs/expand-region
+app-emacs/exwm
 app-emacs/f
 app-emacs/fennel-mode
 app-emacs/fff
@@ -2315,6 +2357,8 @@ app-emacs/flim
 app-emacs/flycheck
 app-emacs/flycheck-guile
 app-emacs/flycheck-inline
+app-emacs/flycheck-nimsuggest
+app-emacs/flycheck-package
 app-emacs/folding
 app-emacs/fsharp-mode
 app-emacs/geiser
@@ -2329,6 +2373,7 @@ app-emacs/graphql
 app-emacs/graphviz-dot-mode
 app-emacs/h4x0r
 app-emacs/haskell-mode
+app-emacs/haxe-mode
 app-emacs/helm
 app-emacs/helm-system-packages
 app-emacs/hexrgb
@@ -2339,6 +2384,7 @@ app-emacs/howm
 app-emacs/ht
 app-emacs/htmlize
 app-emacs/httpd
+app-emacs/hydra
 app-emacs/icicles
 app-emacs/igrep
 app-emacs/inform-mode
@@ -2348,14 +2394,18 @@ app-emacs/ivy-rich
 app-emacs/jam-mode
 app-emacs/jasmin
 app-emacs/jde
+app-emacs/js-comint
 app-emacs/julia-mode
 app-emacs/julia-repl
+app-emacs/key-chord
 app-emacs/keywiz
 app-emacs/lean-mode
 app-emacs/ledger-mode
 app-emacs/libegit2
 app-emacs/lookup
+app-emacs/lsp-java
 app-emacs/lsp-mode
+app-emacs/lsp-treemacs
 app-emacs/lsp-ui
 app-emacs/lua-mode
 app-emacs/lv
@@ -2365,6 +2415,7 @@ app-emacs/magit-popup
 app-emacs/mailcrypt
 app-emacs/marginalia
 app-emacs/markdown-mode
+app-emacs/mastodon
 app-emacs/math-symbol-lists
 app-emacs/matlab
 app-emacs/mediawiki
@@ -2382,6 +2433,8 @@ app-emacs/multiple-cursors
 app-emacs/muse
 app-emacs/nagios-mode
 app-emacs/navi2ch
+app-emacs/nim-mode
+app-emacs/noflet
 app-emacs/nxml-docbook5-schemas
 app-emacs/nxml-gentoo-schemas
 app-emacs/nxml-libvirt-schemas
@@ -2391,17 +2444,24 @@ app-emacs/orderless
 app-emacs/org-appear
 app-emacs/org-contrib
 app-emacs/org-mode
+app-emacs/org-static-blog
 app-emacs/org-superstar-mode
 app-emacs/outline-magic
+app-emacs/package-build
+app-emacs/package-lint
 app-emacs/paredit
 app-emacs/pariemacs
+app-emacs/parsebib
+app-emacs/pfuture
 app-emacs/php-mode
 app-emacs/pkg-info
 app-emacs/planner
 app-emacs/po-mode
+app-emacs/polymode
 app-emacs/popup
 app-emacs/popwin
 app-emacs/pos-tip
+app-emacs/posframe
 app-emacs/pov-mode
 app-emacs/powershell
 app-emacs/projectile
@@ -2418,10 +2478,12 @@ app-emacs/quilt-el
 app-emacs/qwerty
 app-emacs/racket-mode
 app-emacs/rainbow-delimiters
+app-emacs/rainbow-mode
 app-emacs/redo+
 app-emacs/reformatter
 app-emacs/regress
 app-emacs/remember
+app-emacs/request
 app-emacs/revive
 app-emacs/rfcview
 app-emacs/riece
@@ -2436,11 +2498,14 @@ app-emacs/scheme-complete
 app-emacs/scim-bridge-el
 app-emacs/scss-mode
 app-emacs/semi
+app-emacs/servant
 app-emacs/session
 app-emacs/setnu
 app-emacs/setup
+app-emacs/shell-split-string
 app-emacs/shut-up
 app-emacs/slime
+app-emacs/sly
 app-emacs/sml-mode
 app-emacs/sokoban
 app-emacs/spacemacs-theme
@@ -2448,21 +2513,26 @@ app-emacs/spinner
 app-emacs/ssh
 app-emacs/stripes
 app-emacs/sumibi
+app-emacs/sunrise-commander
 app-emacs/swiper
 app-emacs/switch-window
+app-emacs/system-packages
 app-emacs/teco
 app-emacs/template
 app-emacs/tempo-snippets
 app-emacs/thinks
 app-emacs/transient
+app-emacs/treemacs
 app-emacs/treepy
 app-emacs/tuareg-mode
 app-emacs/twittering-mode
+app-emacs/typescript-mode
 app-emacs/typing
 app-emacs/uboat
 app-emacs/undercover
 app-emacs/undo-tree
 app-emacs/uptimes
+app-emacs/use-package
 app-emacs/vertico
 app-emacs/vhdl-mode
 app-emacs/visual-basic-mode
@@ -2471,6 +2541,8 @@ app-emacs/volume
 app-emacs/vterm
 app-emacs/w3mnav
 app-emacs/wanderlust
+app-emacs/web-server
+app-emacs/webpaste
 app-emacs/websocket
 app-emacs/wgrep
 app-emacs/which-key
@@ -2478,7 +2550,9 @@ app-emacs/whine
 app-emacs/wikipedia-mode
 app-emacs/windows
 app-emacs/with-editor
+app-emacs/with-simulated-input
 app-emacs/xclip
+app-emacs/xelb
 app-emacs/xrdb-mode
 app-emacs/xslide
 app-emacs/yaml-mode
@@ -2500,6 +2574,7 @@ app-emulation/dlx
 app-emulation/docker-machine
 app-emulation/docker-machine-kvm
 app-emulation/dosemu
+app-emulation/dxvk
 app-emulation/dynamips
 app-emulation/faudio
 app-emulation/firecracker-bin
@@ -2529,6 +2604,7 @@ app-emulation/nemu
 app-emulation/open-vm-tools
 app-emulation/pcem
 app-emulation/phpvirtualbox
+app-emulation/plus42
 app-emulation/protontricks
 app-emulation/punes
 app-emulation/q4wine
@@ -2538,7 +2614,6 @@ app-emulation/qemu-init-scripts
 app-emulation/ruffle
 app-emulation/runv
 app-emulation/simh
-app-emulation/simplevirt
 app-emulation/ski
 app-emulation/softgun
 app-emulation/spectemu
@@ -2560,6 +2635,7 @@ app-emulation/virtualbox-extpack-oracle
 app-emulation/virtualbox-guest-additions
 app-emulation/virtualbox-modules
 app-emulation/vkd3d
+app-emulation/vkd3d-proton
 app-emulation/wine-desktop-common
 app-emulation/wine-gecko
 app-emulation/wine-mono
@@ -2773,6 +2849,7 @@ app-metrics/alertmanager
 app-metrics/bind_exporter
 app-metrics/blackbox_exporter
 app-metrics/burrow_exporter
+app-metrics/ceph_exporter
 app-metrics/collectd
 app-metrics/consul_exporter
 app-metrics/dnsmasq_exporter
@@ -3008,6 +3085,7 @@ app-misc/ps3pf_utils
 app-misc/pwsafe
 app-misc/qcma
 app-misc/qlcplus
+app-misc/qtxdg-tools
 app-misc/radeontop
 app-misc/ranger
 app-misc/razertool
@@ -3075,7 +3153,6 @@ app-misc/trash-cli
 app-misc/tty-clock
 app-misc/ttyload
 app-misc/ttyrec
-app-misc/ttysnoop
 app-misc/unfoo
 app-misc/uptimed
 app-misc/utimer
@@ -3126,6 +3203,7 @@ app-office/grisbi
 app-office/gtg
 app-office/homebank
 app-office/impressive
+app-office/kalendar
 app-office/kexi
 app-office/kmymoney
 app-office/kraft
@@ -3142,7 +3220,6 @@ app-office/magicpoint
 app-office/mdbtools
 app-office/moneydance
 app-office/multitalk
-app-office/pinpoint
 app-office/planner
 app-office/projectlibre-bin
 app-office/sc
@@ -3455,6 +3532,7 @@ app-text/openpaperwork-core
 app-text/openpaperwork-gtk
 app-text/opensp
 app-text/pandoc
+app-text/pandoc-bin
 app-text/paperwork
 app-text/paperwork-backend
 app-text/paps
@@ -3934,7 +4012,6 @@ dev-cpp/catch
 dev-cpp/clucene
 dev-cpp/commoncpp2
 dev-cpp/cpp-hocon
-dev-cpp/cpp-taskflow
 dev-cpp/ctemplate
 dev-cpp/doctest
 dev-cpp/eigen
@@ -3968,6 +4045,7 @@ dev-cpp/ms-gsl
 dev-cpp/muParser
 dev-cpp/nlohmann_json
 dev-cpp/notcurses
+dev-cpp/opentelemetry-cpp
 dev-cpp/pangomm
 dev-cpp/picojson
 dev-cpp/pngpp
@@ -3985,6 +4063,7 @@ dev-cpp/sol2
 dev-cpp/sourcetrail
 dev-cpp/sparsehash
 dev-cpp/string-theory
+dev-cpp/taskflow
 dev-cpp/tbb
 dev-cpp/tclap
 dev-cpp/termcolor
@@ -4221,20 +4300,15 @@ dev-games/t4k-common
 dev-games/tiled
 dev-games/wfmath
 dev-go/act
-dev-go/coveraggregator
 dev-go/delve
 dev-go/fuzzy
 dev-go/get-ego-vendor
 dev-go/go-bindata
 dev-go/go-bindata-assetfs
 dev-go/go-colortext
-dev-go/go-eapache-queue
 dev-go/go-license-detector
 dev-go/go-licenses
 dev-go/go-md2man
-dev-go/go-snappy
-dev-go/go-spew
-dev-go/go-sqlite3
 dev-go/go-tools
 dev-go/go-tour
 dev-go/godebug-pretty
@@ -5095,7 +5169,6 @@ dev-java/bcprov
 dev-java/bcutil
 dev-java/bnd-junit
 dev-java/bndlib
-dev-java/boot-bin
 dev-java/brotli-dec
 dev-java/browserlauncher2
 dev-java/bsf
@@ -5133,7 +5206,6 @@ dev-java/cpptasks
 dev-java/dom4j
 dev-java/easymock
 dev-java/eclipse-ecj
-dev-java/eclipsito
 dev-java/emma
 dev-java/error-prone-annotations
 dev-java/failureaccess
@@ -5141,21 +5213,17 @@ dev-java/fec
 dev-java/findbugs-annotations
 dev-java/fontbox
 dev-java/fop
-dev-java/freehep-graphicsbase
-dev-java/freehep-io
-dev-java/gcj-jdk
 dev-java/gin
-dev-java/glassfish-interceptor-api
 dev-java/glassfish-jms-api
 dev-java/glassfish-persistence
 dev-java/glassfish-xmlrpc-api
 dev-java/glazedlists
-dev-java/gnu-classpath
 dev-java/gnu-jaf
 dev-java/gnu-regexp
 dev-java/gradle-bin
 dev-java/gson
 dev-java/guava
+dev-java/guava-testlib
 dev-java/guice
 dev-java/gwt
 dev-java/hamcrest-core
@@ -5170,7 +5238,6 @@ dev-java/icedtea-bin
 dev-java/icedtea-sound
 dev-java/icedtea-web
 dev-java/icu4j
-dev-java/invokebinder
 dev-java/iso-relax
 dev-java/j2objc-annotations
 dev-java/jackcess
@@ -5187,6 +5254,7 @@ dev-java/jai-imageio-jpeg2000
 dev-java/jakarta-activation
 dev-java/jakarta-activation-api
 dev-java/jakarta-json-api
+dev-java/jakarta-mail-api
 dev-java/jakarta-oro
 dev-java/jakarta-regexp
 dev-java/jakarta-xml-soap-api
@@ -5195,8 +5263,6 @@ dev-java/jal
 dev-java/janino
 dev-java/jansi
 dev-java/jansi-native
-dev-java/japitools
-dev-java/java-apicheck
 dev-java/java-config
 dev-java/java-dep-check
 dev-java/java-diff-utils
@@ -5214,9 +5280,6 @@ dev-java/jaxen
 dev-java/jbig2-imageio
 dev-java/jbitcollider-core
 dev-java/jboss-jms-api
-dev-java/jboss-marshalling
-dev-java/jboss-marshalling-river
-dev-java/jboss-marshalling-serial
 dev-java/jboss-modules
 dev-java/jcalendar
 dev-java/jchart2d
@@ -5225,7 +5288,6 @@ dev-java/jcip-annotations
 dev-java/jclasslib
 dev-java/jcommander
 dev-java/jctools-core
-dev-java/jdbc-mssqlserver
 dev-java/jdbc-mysql
 dev-java/jdbc-postgresql
 dev-java/jdepend
@@ -5260,7 +5322,6 @@ dev-java/jsch-agent-proxy
 dev-java/json
 dev-java/json-simple
 dev-java/jspeex
-dev-java/jsr250
 dev-java/jsr305
 dev-java/jta
 dev-java/jtds
@@ -5274,7 +5335,6 @@ dev-java/kafka-clients
 dev-java/leiningen-bin
 dev-java/libg
 dev-java/lmax-disruptor
-dev-java/log4j
 dev-java/log4j-12-api
 dev-java/log4j-api
 dev-java/log4j-api-java9
@@ -5286,14 +5346,12 @@ dev-java/lz4-java
 dev-java/lzma
 dev-java/lzmajio
 dev-java/maven-bin
-dev-java/maven-hawtjni-plugin
 dev-java/mchange-commons
 dev-java/mersennetwister
 dev-java/metainf-services
 dev-java/microba
 dev-java/miglayout
 dev-java/mill-bin
-dev-java/mimepull
 dev-java/mockito
 dev-java/msv
 dev-java/mvel
@@ -5308,7 +5366,6 @@ dev-java/openjdk-bin
 dev-java/openjdk-jre-bin
 dev-java/openjfx
 dev-java/opentest4j
-dev-java/oracle-javamail
 dev-java/osgi-annotation-versioning
 dev-java/osgi-compendium
 dev-java/osgi-core-api
@@ -5367,7 +5424,6 @@ dev-java/xalan
 dev-java/xalan-serializer
 dev-java/xerces
 dev-java/xerial-core
-dev-java/xjavac
 dev-java/xml-commons-external
 dev-java/xml-commons-resolver
 dev-java/xmlgraphics-commons
@@ -5491,6 +5547,9 @@ dev-lang/yap
 dev-lang/yasm
 dev-lang/zig
 dev-libs/9libs
+dev-libs/FBGEMM
+dev-libs/FP16
+dev-libs/FXdiv
 dev-libs/Ice
 dev-libs/OpenNI
 dev-libs/OpenNI2
@@ -5503,6 +5562,7 @@ dev-libs/appstream-glib
 dev-libs/apr
 dev-libs/apr-util
 dev-libs/argtable
+dev-libs/asmjit
 dev-libs/atcore
 dev-libs/atf
 dev-libs/atk
@@ -5513,7 +5573,6 @@ dev-libs/aws-c-event-stream
 dev-libs/aws-c-io
 dev-libs/aws-checksums
 dev-libs/aws-sdk-cpp
-dev-libs/bareos-fastlzlib
 dev-libs/bcm2835
 dev-libs/bemenu
 dev-libs/bglibs
@@ -5545,6 +5604,7 @@ dev-libs/concurrencykit
 dev-libs/confuse
 dev-libs/console_bridge
 dev-libs/cppcodec
+dev-libs/cpuinfo
 dev-libs/crc32c
 dev-libs/criterion
 dev-libs/crossguid
@@ -5602,7 +5662,6 @@ dev-libs/gom
 dev-libs/gost-engine
 dev-libs/granite
 dev-libs/grantlee
-dev-libs/gtx
 dev-libs/gumbo
 dev-libs/half
 dev-libs/hidapi
@@ -5761,6 +5820,7 @@ dev-libs/libmba
 dev-libs/libmcrypt
 dev-libs/libmelf
 dev-libs/libmemcached
+dev-libs/libmemcached-awesome
 dev-libs/libmirage
 dev-libs/libmix
 dev-libs/libmodbus
@@ -5772,6 +5832,7 @@ dev-libs/libnatspec
 dev-libs/libnest2d
 dev-libs/libnfc
 dev-libs/libnl
+dev-libs/libnop
 dev-libs/libnsfb
 dev-libs/libnsutils
 dev-libs/libofx
@@ -5932,8 +5993,10 @@ dev-libs/popt
 dev-libs/ppl
 dev-libs/protobuf
 dev-libs/protobuf-c
+dev-libs/psimd
 dev-libs/pslib
 dev-libs/ptexenc
+dev-libs/pthreadpool
 dev-libs/pthreads4w
 dev-libs/pugixml
 dev-libs/qcustomplot
@@ -5970,6 +6033,7 @@ dev-libs/shhopt
 dev-libs/simdjson
 dev-libs/sink
 dev-libs/skalibs
+dev-libs/sleef
 dev-libs/snowball-stemmer
 dev-libs/softhsm
 dev-libs/sord
@@ -5981,6 +6045,7 @@ dev-libs/stb
 dev-libs/stfl
 dev-libs/teakra
 dev-libs/template-glib
+dev-libs/thrift
 dev-libs/tinyxml
 dev-libs/tinyxml2
 dev-libs/tllist
@@ -6146,6 +6211,7 @@ dev-ml/cmdliner
 dev-ml/core
 dev-ml/core_bench
 dev-ml/core_kernel
+dev-ml/core_unix
 dev-ml/cppo
 dev-ml/cryptokit
 dev-ml/csexp
@@ -6159,6 +6225,7 @@ dev-ml/dune-private-libs
 dev-ml/dune-site
 dev-ml/duration
 dev-ml/easy-format
+dev-ml/expect_test_helpers_core
 dev-ml/extlib
 dev-ml/facile
 dev-ml/fieldslib
@@ -6169,6 +6236,7 @@ dev-ml/fpath
 dev-ml/gen
 dev-ml/graphics
 dev-ml/gsl-ocaml
+dev-ml/int_repr
 dev-ml/integers
 dev-ml/jane-street-headers
 dev-ml/jingoo
@@ -6215,6 +6283,7 @@ dev-ml/ocaml-sha
 dev-ml/ocaml-sqlite3
 dev-ml/ocaml-ssl
 dev-ml/ocaml-stdint
+dev-ml/ocaml_intrinsics
 dev-ml/ocamlbuild
 dev-ml/ocamlgraph
 dev-ml/ocamlnet
@@ -6249,6 +6318,7 @@ dev-ml/ppx_custom_printf
 dev-ml/ppx_derivers
 dev-ml/ppx_deriving
 dev-ml/ppx_deriving_yojson
+dev-ml/ppx_disable_unused_warnings
 dev-ml/ppx_enumerate
 dev-ml/ppx_expect
 dev-ml/ppx_fail
@@ -6256,11 +6326,13 @@ dev-ml/ppx_fields_conv
 dev-ml/ppx_fixed_literal
 dev-ml/ppx_hash
 dev-ml/ppx_here
+dev-ml/ppx_ignore_instrumentation
 dev-ml/ppx_import
 dev-ml/ppx_inline_test
 dev-ml/ppx_jane
 dev-ml/ppx_js_style
 dev-ml/ppx_let
+dev-ml/ppx_log
 dev-ml/ppx_module_timer
 dev-ml/ppx_optcomp
 dev-ml/ppx_optional
@@ -6287,6 +6359,7 @@ dev-ml/result
 dev-ml/rresult
 dev-ml/sedlex
 dev-ml/seq
+dev-ml/sexp_pretty
 dev-ml/sexplib
 dev-ml/sexplib0
 dev-ml/spawn
@@ -6294,6 +6367,7 @@ dev-ml/splittable_random
 dev-ml/stdio
 dev-ml/stdlib-shims
 dev-ml/textutils
+dev-ml/textutils_kernel
 dev-ml/time_now
 dev-ml/timezone
 dev-ml/topkg
@@ -6399,6 +6473,7 @@ dev-perl/BDB
 dev-perl/BSD-Resource
 dev-perl/BSON
 dev-perl/BZ-Client
+dev-perl/BackupPC-XS
 dev-perl/Benchmark-Timer
 dev-perl/BerkeleyDB
 dev-perl/Bio-ASN1-EntrezGene
@@ -6959,10 +7034,6 @@ dev-perl/Graphics-ColorNames-WWW
 dev-perl/Graphics-ColorObject
 dev-perl/Growl-GNTP
 dev-perl/Gtk2
-dev-perl/Gtk2-Ex-PodViewer
-dev-perl/Gtk2-Ex-PrintDialog
-dev-perl/Gtk2-Ex-Simple-List
-dev-perl/Gtk2-ImageView
 dev-perl/Gtk2-Notify
 dev-perl/Gtk2-SourceView2
 dev-perl/Gtk2-Unique
@@ -7993,7 +8064,6 @@ dev-perl/constant-defer
 dev-perl/enum
 dev-perl/forks
 dev-perl/glib-perl
-dev-perl/gnome2-canvas
 dev-perl/gnome2-wnck
 dev-perl/go-perl
 dev-perl/gtk2-ex-formfactory
@@ -8180,6 +8250,7 @@ dev-php/pecl-pam
 dev-php/pecl-parallel
 dev-php/pecl-propro
 dev-php/pecl-ps
+dev-php/pecl-psr
 dev-php/pecl-radius
 dev-php/pecl-raphf
 dev-php/pecl-redis
@@ -8269,8 +8340,9 @@ dev-python/Faker
 dev-python/GitPython
 dev-python/GridDataFormats
 dev-python/MechanicalSoup
+dev-python/Opcodes
+dev-python/PeachPy
 dev-python/PyContracts
-dev-python/PyECLib
 dev-python/PyGithub
 dev-python/PyPDF2
 dev-python/PyQt-builder
@@ -8310,6 +8382,7 @@ dev-python/ajsonrpc
 dev-python/alabaster
 dev-python/alagitpull
 dev-python/alembic
+dev-python/allpairspy
 dev-python/ament_package
 dev-python/amodem
 dev-python/aniso8601
@@ -8489,7 +8562,6 @@ dev-python/cssselect
 dev-python/cssselect2
 dev-python/cssutils
 dev-python/csvkit
-dev-python/ctypescrypto
 dev-python/curtsies
 dev-python/cvxopt
 dev-python/cwcwidth
@@ -8500,6 +8572,7 @@ dev-python/cython-test-exception-raiser
 dev-python/daemonize
 dev-python/dask
 dev-python/dbfread
+dev-python/dbus-next
 dev-python/dbus-python
 dev-python/dbutils
 dev-python/ddt
@@ -8516,6 +8589,7 @@ dev-python/dictdiffer
 dev-python/dicttoxml
 dev-python/diff-match-patch
 dev-python/dill
+dev-python/dirty-equals
 dev-python/discogs-client
 dev-python/diskcache
 dev-python/dissononce
@@ -8597,6 +8671,7 @@ dev-python/etuples
 dev-python/eventlet
 dev-python/ewmh
 dev-python/exam
+dev-python/exceptiongroup
 dev-python/execnet
 dev-python/executing
 dev-python/expects
@@ -8650,6 +8725,7 @@ dev-python/fleep
 dev-python/flexmock
 dev-python/flit
 dev-python/flit_core
+dev-python/flit_scm
 dev-python/flufl-bounce
 dev-python/flufl-i18n
 dev-python/flufl-lock
@@ -8712,6 +8788,7 @@ dev-python/h11
 dev-python/h2
 dev-python/h5py
 dev-python/happybase
+dev-python/hatch-vcs
 dev-python/hatchling
 dev-python/hcloud-python
 dev-python/helpdev
@@ -8842,11 +8919,12 @@ dev-python/kconfiglib
 dev-python/keep
 dev-python/keyring
 dev-python/keystoneauth
+dev-python/kgb
 dev-python/kiwisolver
 dev-python/klein
 dev-python/kombu
 dev-python/krb5
-dev-python/lark-parser
+dev-python/lark
 dev-python/latexcodec
 dev-python/lazr-config
 dev-python/lazr-delegates
@@ -8955,13 +9033,6 @@ dev-python/mysql-connector-python
 dev-python/mysqlclient
 dev-python/myst_parser
 dev-python/nagiosplugin
-dev-python/namespace-google
-dev-python/namespace-lazr
-dev-python/namespace-paste
-dev-python/namespace-repoze
-dev-python/namespace-ruamel
-dev-python/namespace-sphinxcontrib
-dev-python/namespace-zope
 dev-python/natsort
 dev-python/nautilus-python
 dev-python/nbclassic
@@ -8990,6 +9061,7 @@ dev-python/nose2
 dev-python/nose_fixes
 dev-python/nose_warnings_filters
 dev-python/notebook
+dev-python/notebook_shim
 dev-python/notify2
 dev-python/nototools
 dev-python/nptyping
@@ -9007,6 +9079,8 @@ dev-python/oct2py
 dev-python/octave_kernel
 dev-python/odfpy
 dev-python/olefile
+dev-python/openapi-schema-validator
+dev-python/openapi-spec-validator
 dev-python/openpyxl
 dev-python/openstackdocstheme
 dev-python/openstacksdk
@@ -9053,6 +9127,7 @@ dev-python/path-and-address
 dev-python/path-py
 dev-python/pathspec
 dev-python/pathtools
+dev-python/pathvalidate
 dev-python/patiencediff
 dev-python/patsy
 dev-python/pbkdf2
@@ -9177,11 +9252,13 @@ dev-python/pydata-sphinx-theme
 dev-python/pydbus
 dev-python/pydecomp
 dev-python/pydevd
+dev-python/pydiffx
 dev-python/pydispatcher
 dev-python/pydocstyle
 dev-python/pydot
 dev-python/pydotplus
 dev-python/pydyf
+dev-python/pyeclib
 dev-python/pyelftools
 dev-python/pyenchant
 dev-python/pyfakefs
@@ -9231,7 +9308,6 @@ dev-python/pymetar
 dev-python/pymilter
 dev-python/pymongo
 dev-python/pymountboot
-dev-python/pymssql
 dev-python/pymysql
 dev-python/pynacl
 dev-python/pynest2d
@@ -9293,6 +9369,7 @@ dev-python/pysvg
 dev-python/pysvn
 dev-python/pytables
 dev-python/pyte
+dev-python/pytesseract
 dev-python/pytest
 dev-python/pytest-aiohttp
 dev-python/pytest-asyncio
@@ -9405,6 +9482,7 @@ dev-python/python-netlink
 dev-python/python-neutronclient
 dev-python/python-novaclient
 dev-python/python-openstackclient
+dev-python/python-pam
 dev-python/python-poppler-qt5
 dev-python/python-ptrace
 dev-python/python-redmine
@@ -9480,7 +9558,6 @@ dev-python/rencode
 dev-python/reno
 dev-python/reportlab
 dev-python/repoze-lru
-dev-python/repoze-sphinx-autointerface
 dev-python/requests
 dev-python/requests-cache
 dev-python/requests-credssp
@@ -9548,7 +9625,7 @@ dev-python/setproctitle
 dev-python/setuptools
 dev-python/setuptools-declarative-requirements
 dev-python/setuptools-git
-dev-python/setuptools_rust
+dev-python/setuptools-rust
 dev-python/setuptools_scm
 dev-python/setuptools_scm_git_archive
 dev-python/setuptools_trial
@@ -9655,7 +9732,7 @@ dev-python/strict-rfc3339
 dev-python/stripe
 dev-python/subprocess-tee
 dev-python/subunit
-dev-python/suds
+dev-python/suds-community
 dev-python/sure
 dev-python/svg-path
 dev-python/svglib
@@ -9668,6 +9745,7 @@ dev-python/tabulate
 dev-python/tagpy
 dev-python/tappy
 dev-python/tblib
+dev-python/tcolorpy
 dev-python/tekore
 dev-python/tempest
 dev-python/tempita
@@ -9706,6 +9784,7 @@ dev-python/toolz
 dev-python/toposort
 dev-python/towncrier
 dev-python/tox
+dev-python/tpm2-pytss
 dev-python/tqdm
 dev-python/traitlets
 dev-python/transitions
@@ -9776,6 +9855,7 @@ dev-python/waitress
 dev-python/wand
 dev-python/warlock
 dev-python/watchdog
+dev-python/watchfiles
 dev-python/watchgod
 dev-python/wcag-contrast-ratio
 dev-python/wcmatch
@@ -9835,11 +9915,11 @@ dev-python/zope-configuration
 dev-python/zope-deprecation
 dev-python/zope-event
 dev-python/zope-exceptions
+dev-python/zope-hookable
 dev-python/zope-i18nmessageid
 dev-python/zope-interface
 dev-python/zope-schema
 dev-python/zope-testing
-dev-python/zope-testrunner
 dev-python/zstandard
 dev-python/zstd
 dev-python/zxcvbn
@@ -10436,6 +10516,7 @@ dev-ruby/facter
 dev-ruby/fakefs
 dev-ruby/faker
 dev-ruby/faraday
+dev-ruby/faraday-net_http
 dev-ruby/faraday_middleware
 dev-ruby/faraday_middleware-multi_json
 dev-ruby/fast-stemmer
@@ -10456,6 +10537,7 @@ dev-ruby/flickraw
 dev-ruby/flog
 dev-ruby/font-awesome-rails
 dev-ruby/forgery
+dev-ruby/forwardable
 dev-ruby/forwardable-extended
 dev-ruby/fuubar
 dev-ruby/gettext-setup
@@ -10618,7 +10700,6 @@ dev-ruby/niceogiri
 dev-ruby/nio4r
 dev-ruby/nokogiri
 dev-ruby/nokogiri-diff
-dev-ruby/nokogumbo
 dev-ruby/ntlm-http
 dev-ruby/oauth
 dev-ruby/oauth2
@@ -10656,6 +10737,7 @@ dev-ruby/posix-spawn
 dev-ruby/power_assert
 dev-ruby/prawn
 dev-ruby/prawn-table
+dev-ruby/prime
 dev-ruby/propshaft
 dev-ruby/pry
 dev-ruby/psych
@@ -10834,6 +10916,7 @@ dev-ruby/simplecov-html
 dev-ruby/simpleidn
 dev-ruby/sinatra
 dev-ruby/sinatra-partial
+dev-ruby/singleton
 dev-ruby/six
 dev-ruby/slim
 dev-ruby/slop
@@ -11117,7 +11200,6 @@ dev-util/android-studio
 dev-util/android-tools
 dev-util/anjuta
 dev-util/apitrace
-dev-util/appdata-tools
 dev-util/archdiff
 dev-util/argouml
 dev-util/artifactory-bin
@@ -11261,7 +11343,6 @@ dev-util/editorconfig-geany
 dev-util/egypt
 dev-util/elfkickers
 dev-util/envman
-dev-util/fix-la-relink-command
 dev-util/flatpak-builder
 dev-util/flawfinder
 dev-util/ftjam
@@ -11292,6 +11373,7 @@ dev-util/goland
 dev-util/google-perftools
 dev-util/gource
 dev-util/gperf
+dev-util/gpp
 dev-util/gprof2dot
 dev-util/gtk-builder-convert
 dev-util/gtk-doc
@@ -11363,7 +11445,7 @@ dev-util/meson
 dev-util/meson-format-array
 dev-util/min-cscope
 dev-util/mingw64-runtime
-dev-util/nemiver
+dev-util/mingw64-toolchain
 dev-util/netsurf-buildsystem
 dev-util/ninja
 dev-util/ninka
@@ -11418,6 +11500,7 @@ dev-util/rizin
 dev-util/rocm-clang-ocl
 dev-util/rocm-cmake
 dev-util/rocm-smi
+dev-util/rocm_bandwidth_test
 dev-util/rocminfo
 dev-util/roctracer
 dev-util/ropper
@@ -11447,6 +11530,7 @@ dev-util/shflags
 dev-util/shtool
 dev-util/shunit2
 dev-util/smem
+dev-util/snakeviz
 dev-util/source-highlight
 dev-util/spirv-headers
 dev-util/spirv-llvm-translator
@@ -11643,6 +11727,7 @@ games-action/swordandsworcery
 games-action/teeworlds
 games-action/towbowl-tactics
 games-action/transcend
+games-action/transistor
 games-action/trine
 games-action/trine-enchanted-edition
 games-action/trine2
@@ -12333,6 +12418,7 @@ games-util/gslist
 games-util/joycond
 games-util/joystick
 games-util/lgogdownloader
+games-util/libstrangle
 games-util/linux-wbfs-manager
 games-util/loki_patch
 games-util/lutris
@@ -12400,7 +12486,6 @@ gnome-extra/cjs
 gnome-extra/eiciel
 gnome-extra/evolution-data-server
 gnome-extra/evolution-ews
-gnome-extra/filemanager-actions
 gnome-extra/gconf-editor
 gnome-extra/gnome-boxes
 gnome-extra/gnome-calculator
@@ -12416,7 +12501,6 @@ gnome-extra/gnome-getting-started-docs
 gnome-extra/gnome-integration-spotify
 gnome-extra/gnome-logs
 gnome-extra/gnome-power-manager
-gnome-extra/gnome-search-tool
 gnome-extra/gnome-shell-extension-alphabetical-grid
 gnome-extra/gnome-shell-extension-appindicator
 gnome-extra/gnome-shell-extension-applications-overview-tooltip
@@ -12435,7 +12519,6 @@ gnome-extra/gnome-system-monitor
 gnome-extra/gnome-tweaks
 gnome-extra/gnome-user-docs
 gnome-extra/gnome-user-share
-gnome-extra/gnome-utils
 gnome-extra/gnome-weather
 gnome-extra/gtkhtml
 gnome-extra/gucharmap
@@ -12548,6 +12631,7 @@ gui-libs/wayfire-plugins-extra
 gui-libs/wf-config
 gui-libs/wlroots
 gui-libs/wpebackend-fdo
+gui-libs/xdg-desktop-portal-lxqt
 gui-libs/xdg-desktop-portal-wlr
 gui-wm/hikari
 gui-wm/sway
@@ -12661,7 +12745,6 @@ kde-apps/killbots
 kde-apps/kimagemapeditor
 kde-apps/kimap
 kde-apps/kio-extras
-kde-apps/kipi-plugins
 kde-apps/kiriki
 kde-apps/kiten
 kde-apps/kitinerary
@@ -12746,7 +12829,6 @@ kde-apps/libkdepim
 kde-apps/libkeduvocdocument
 kde-apps/libkexiv2
 kde-apps/libkgapi
-kde-apps/libkipi
 kde-apps/libkleo
 kde-apps/libkmahjongg
 kde-apps/libkomparediff2
@@ -13503,6 +13585,7 @@ media-gfx/scrot
 media-gfx/sfftobmp
 media-gfx/shotwell
 media-gfx/simple-scan
+media-gfx/skanpage
 media-gfx/solvespace
 media-gfx/springgraph
 media-gfx/svg2rlg
@@ -13783,6 +13866,7 @@ media-libs/libquvi-scripts
 media-libs/libraw
 media-libs/libreplaygain
 media-libs/librosprite
+media-libs/librtprocess
 media-libs/libsamplerate
 media-libs/libsbsms
 media-libs/libsdl
@@ -13797,7 +13881,6 @@ media-libs/libsndfile
 media-libs/libsoundio
 media-libs/libsoundtouch
 media-libs/libsvgtiny
-media-libs/libtaginfo
 media-libs/libtgvoip
 media-libs/libtheora
 media-libs/libtiger
@@ -13813,6 +13896,7 @@ media-libs/libvpx
 media-libs/libwebp
 media-libs/libwmf
 media-libs/libxmi
+media-libs/libxmp
 media-libs/libxspf
 media-libs/libxtract
 media-libs/libzen
@@ -13822,6 +13906,7 @@ media-libs/lsp-plugins
 media-libs/lv2
 media-libs/lvtk
 media-libs/mesa
+media-libs/mesa-amber
 media-libs/mlt
 media-libs/munt-mt32emu
 media-libs/musicbrainz
@@ -14591,7 +14676,6 @@ media-sound/wmsound-data
 media-sound/xfmpc
 media-sound/xineadump
 media-sound/xmms2
-media-sound/xnoise
 media-sound/xwax
 media-sound/yarock
 media-sound/yoshimi
@@ -14669,7 +14753,6 @@ media-video/gaupol
 media-video/gnome-video-effects
 media-video/gpac
 media-video/guvcview
-media-video/gxine
 media-video/h264enc
 media-video/handbrake
 media-video/harvid
@@ -14702,7 +14785,6 @@ media-video/mpglen
 media-video/mpgtx
 media-video/mplay-sh
 media-video/mplayer
-media-video/mplayer-sh
 media-video/mpv
 media-video/noad
 media-video/nvidia-video-codec
@@ -14841,6 +14923,8 @@ net-analyzer/goaccess
 net-analyzer/gr-fosphor
 net-analyzer/graphite-web
 net-analyzer/greenbone-security-assistant
+net-analyzer/gsa
+net-analyzer/gsad
 net-analyzer/gspoof
 net-analyzer/gvm
 net-analyzer/gvm-libs
@@ -15002,6 +15086,7 @@ net-analyzer/sqlninja
 net-analyzer/squid-graph
 net-analyzer/squidsites
 net-analyzer/squidview
+net-analyzer/ssh-audit
 net-analyzer/sshping
 net-analyzer/ssldump
 net-analyzer/sslscan
@@ -15022,6 +15107,7 @@ net-analyzer/tcptrace
 net-analyzer/tcptraceroute
 net-analyzer/tcptrack
 net-analyzer/telegraf
+net-analyzer/termshark
 net-analyzer/testssl
 net-analyzer/thc-ipv6
 net-analyzer/thcrut
@@ -15210,7 +15296,6 @@ net-im/element-desktop-bin
 net-im/empathy
 net-im/err
 net-im/gajim
-net-im/gg-transport
 net-im/gitter-bin
 net-im/jabber-base
 net-im/libcommuni
@@ -15249,6 +15334,7 @@ net-im/tkabber
 net-im/toxic
 net-im/transwhat
 net-im/vacuum
+net-im/wazzapp-bin
 net-im/whatsapp-desktop-bin
 net-im/yowsup
 net-im/ysm
@@ -15677,12 +15763,12 @@ net-misc/geoipupdate
 net-misc/geomyidae
 net-misc/gerbera
 net-misc/getdate
+net-misc/gnome-connections
 net-misc/gnome-online-miners
 net-misc/gnome-remote-desktop
 net-misc/gns3-gui
 net-misc/gns3-server
 net-misc/gofish
-net-misc/grdesktop
 net-misc/grive
 net-misc/gsasl
 net-misc/gsutil
@@ -15715,7 +15801,6 @@ net-misc/ipsvd
 net-misc/iputils
 net-misc/ipv6calc
 net-misc/jlj
-net-misc/jrdesktop
 net-misc/jwhois
 net-misc/kafka-bin
 net-misc/kafkacat
@@ -15821,11 +15906,11 @@ net-misc/radvd
 net-misc/rclone
 net-misc/rdate
 net-misc/rdesktop
-net-misc/realtek-r8152
 net-misc/redir
 net-misc/remmina
 net-misc/rinetd
 net-misc/rsync
+net-misc/rsync-bpc
 net-misc/rwbs
 net-misc/rwhoisd
 net-misc/rygel
@@ -15877,6 +15962,7 @@ net-misc/telnet-bsd
 net-misc/throttle
 net-misc/tiers
 net-misc/tigervnc
+net-misc/tigervnc-xorg-module
 net-misc/tipcutils
 net-misc/ttytter
 net-misc/turbovnc
@@ -15892,8 +15978,6 @@ net-misc/utelnetd
 net-misc/valve
 net-misc/vconfig
 net-misc/vde
-net-misc/vinagre
-net-misc/vino
 net-misc/vmnet
 net-misc/vmpsd
 net-misc/vncrec
@@ -15991,7 +16075,6 @@ net-p2p/resilio-sync
 net-p2p/retroshare
 net-p2p/rtorrent
 net-p2p/syncthing
-net-p2p/syrep
 net-p2p/torrentinfo
 net-p2p/transmission
 net-p2p/transmission-remote-gtk
@@ -16075,6 +16158,7 @@ net-vpn/6tunnel
 net-vpn/corkscrew
 net-vpn/fp-multiuser
 net-vpn/frp
+net-vpn/headscale
 net-vpn/httptunnel
 net-vpn/i2p
 net-vpn/i2pd
@@ -16106,6 +16190,7 @@ net-vpn/tinc
 net-vpn/tor
 net-vpn/vpnc
 net-vpn/vpnc-scripts
+net-vpn/vpncloud
 net-vpn/vpncwatch
 net-vpn/vtun
 net-vpn/wireguard-modules
@@ -16284,8 +16369,11 @@ sci-astronomy/pal
 sci-astronomy/predict
 sci-astronomy/psfex
 sci-astronomy/pyephem
+sci-astronomy/pysiril
 sci-astronomy/scamp
 sci-astronomy/sextractor
+sci-astronomy/siril
+sci-astronomy/sirilic
 sci-astronomy/skycat
 sci-astronomy/skymaker
 sci-astronomy/sofa_c
@@ -16613,7 +16701,10 @@ sci-geosciences/routino
 sci-geosciences/tcd-utils
 sci-geosciences/viking
 sci-geosciences/xtide
+sci-libs/NNPACK
+sci-libs/QNNPACK
 sci-libs/ViSP
+sci-libs/XNNPACK
 sci-libs/adolc
 sci-libs/alglib
 sci-libs/amd
@@ -16731,6 +16822,7 @@ sci-libs/keras
 sci-libs/keras-applications
 sci-libs/keras-preprocessing
 sci-libs/kim-api
+sci-libs/kineto
 sci-libs/kissfft
 sci-libs/klu
 sci-libs/lapack
@@ -16804,6 +16896,7 @@ sci-libs/o2scl
 sci-libs/oc
 sci-libs/octomap
 sci-libs/ogdi
+sci-libs/onnx
 sci-libs/openblas
 sci-libs/opencascade
 sci-libs/openlibm
@@ -17057,11 +17150,14 @@ sec-keys/openpgp-keys-bzip2
 sec-keys/openpgp-keys-chetramey
 sec-keys/openpgp-keys-coreutils
 sec-keys/openpgp-keys-crypto++
+sec-keys/openpgp-keys-danielstenberg
 sec-keys/openpgp-keys-danielveillard
 sec-keys/openpgp-keys-debugedit
 sec-keys/openpgp-keys-diffutils
 sec-keys/openpgp-keys-django
 sec-keys/openpgp-keys-dropbear
+sec-keys/openpgp-keys-elfutils
+sec-keys/openpgp-keys-evenrouault
 sec-keys/openpgp-keys-ffmpeg
 sec-keys/openpgp-keys-findutils
 sec-keys/openpgp-keys-gawk
@@ -17077,11 +17173,13 @@ sec-keys/openpgp-keys-gzip
 sec-keys/openpgp-keys-icu
 sec-keys/openpgp-keys-jedisct1
 sec-keys/openpgp-keys-joelrosdahl
+sec-keys/openpgp-keys-kamildudka
 sec-keys/openpgp-keys-karelzak
 sec-keys/openpgp-keys-kernel
 sec-keys/openpgp-keys-kovidgoyal
 sec-keys/openpgp-keys-lassecollin
 sec-keys/openpgp-keys-libarchive
+sec-keys/openpgp-keys-libass
 sec-keys/openpgp-keys-libidn
 sec-keys/openpgp-keys-libvirt
 sec-keys/openpgp-keys-linuxcontainers
@@ -17113,13 +17211,16 @@ sec-keys/openpgp-keys-tar
 sec-keys/openpgp-keys-tcpdump
 sec-keys/openpgp-keys-teemutoivola
 sec-keys/openpgp-keys-terminator
+sec-keys/openpgp-keys-thomasdickey
 sec-keys/openpgp-keys-tor
 sec-keys/openpgp-keys-unbound
 sec-keys/openpgp-keys-unrealircd
+sec-keys/openpgp-keys-vinaysajip
 sec-keys/openpgp-keys-voikko
 sec-keys/openpgp-keys-waynedavison
 sec-keys/openpgp-keys-weechat
 sec-keys/openpgp-keys-wget
+sec-keys/openpgp-keys-xpdf
 sec-keys/signify-keys-signify
 sec-policy/apparmor-profiles
 sec-policy/selinux-abrt
@@ -17655,6 +17756,7 @@ sys-apps/which
 sys-apps/x86info
 sys-apps/xdg-dbus-proxy
 sys-apps/xdg-desktop-portal
+sys-apps/xdg-desktop-portal-gnome
 sys-apps/xdg-desktop-portal-gtk
 sys-apps/xinetd
 sys-apps/xmbmon
@@ -17708,7 +17810,7 @@ sys-auth/realtime-base
 sys-auth/rtkit
 sys-auth/seatd
 sys-auth/skey
-sys-auth/solo-python
+sys-auth/solo1
 sys-auth/ssh-ldap-pubkey
 sys-auth/sssd
 sys-auth/thinkfinger
@@ -17857,7 +17959,6 @@ sys-cluster/libcircle
 sys-cluster/libqb
 sys-cluster/libquo
 sys-cluster/lmod
-sys-cluster/lustre
 sys-cluster/minikube
 sys-cluster/mpich
 sys-cluster/native-mpi
@@ -18138,7 +18239,6 @@ sys-libs/cracklib
 sys-libs/csu
 sys-libs/cygwin-crypt
 sys-libs/db
-sys-libs/e2fsprogs-libs
 sys-libs/efivar
 sys-libs/fortify-headers
 sys-libs/freeipmi
@@ -18542,6 +18642,7 @@ www-apps/klaus
 www-apps/liquid_feedback_core
 www-apps/liquid_feedback_frontend
 www-apps/mediawiki
+www-apps/miniflux
 www-apps/mirmon
 www-apps/moodle
 www-apps/mythweb
@@ -18789,6 +18890,7 @@ x11-drivers/xf86-video-vmware
 x11-libs/agg
 x11-libs/c++-gtk-utils
 x11-libs/cairo
+x11-libs/cmrt
 x11-libs/colord-gtk
 x11-libs/dnd
 x11-libs/fltk
@@ -18807,6 +18909,7 @@ x11-libs/gtkdatabox
 x11-libs/gtkglext
 x11-libs/gtkmathview
 x11-libs/gtksourceview
+x11-libs/intel-hybrid-codec-driver
 x11-libs/libFS
 x11-libs/libGLw
 x11-libs/libICE
@@ -18964,7 +19067,6 @@ x11-misc/ftmenu
 x11-misc/gbase
 x11-misc/gbdfed
 x11-misc/gccmakedep
-x11-misc/gcolor2
 x11-misc/genmenu
 x11-misc/gigolo
 x11-misc/gmrun
@@ -19069,7 +19171,6 @@ x11-misc/set_opacity
 x11-misc/shared-mime-info
 x11-misc/shutter
 x11-misc/simpleswitcher
-x11-misc/sisctrl
 x11-misc/skippy
 x11-misc/slim
 x11-misc/slock
@@ -19256,7 +19357,6 @@ x11-plugins/pidgin-privacy-please
 x11-plugins/pidgin-rhythmbox
 x11-plugins/pidgin-sipe
 x11-plugins/pidgin-skypeweb
-x11-plugins/pidgin-telegram
 x11-plugins/pidgin-window_merge
 x11-plugins/pidgin-xmpp-receipts
 x11-plugins/pidgintex
