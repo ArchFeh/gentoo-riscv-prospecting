@@ -2277,6 +2277,7 @@ app-emacs/company-coq
 app-emacs/company-math
 app-emacs/company-mode
 app-emacs/company-quickhelp
+app-emacs/compat
 app-emacs/consult
 app-emacs/consult-flycheck
 app-emacs/counsel
@@ -2393,7 +2394,6 @@ app-emacs/ivy
 app-emacs/ivy-rich
 app-emacs/jam-mode
 app-emacs/jasmin
-app-emacs/jde
 app-emacs/js-comint
 app-emacs/julia-mode
 app-emacs/julia-repl
@@ -3472,7 +3472,6 @@ app-text/hunspell
 app-text/hyperestraier
 app-text/iso-codes
 app-text/itex2mml
-app-text/jabref
 app-text/jabref-bin
 app-text/jo
 app-text/katarakt
@@ -5217,7 +5216,6 @@ dev-java/gin
 dev-java/glassfish-jms-api
 dev-java/glassfish-persistence
 dev-java/glassfish-xmlrpc-api
-dev-java/glazedlists
 dev-java/gnu-jaf
 dev-java/gnu-regexp
 dev-java/gradle-bin
@@ -5292,14 +5290,12 @@ dev-java/jdbc-mysql
 dev-java/jdbc-postgresql
 dev-java/jdepend
 dev-java/jdom
-dev-java/jempbox
 dev-java/jeromq
 dev-java/jffi
 dev-java/jflex
 dev-java/jformatstring
 dev-java/jgoodies-common
 dev-java/jgoodies-looks
-dev-java/jgraph
 dev-java/jide-oss
 dev-java/jline
 dev-java/jmh-core
@@ -5349,7 +5345,6 @@ dev-java/maven-bin
 dev-java/mchange-commons
 dev-java/mersennetwister
 dev-java/metainf-services
-dev-java/microba
 dev-java/miglayout
 dev-java/mill-bin
 dev-java/mockito
@@ -5400,7 +5395,6 @@ dev-java/snakeyaml
 dev-java/snappy
 dev-java/sparsebitset
 dev-java/spec-alpha
-dev-java/spin
 dev-java/stax2-api
 dev-java/stringtemplate
 dev-java/sun-jai-bin
@@ -11255,7 +11249,6 @@ dev-util/cflow
 dev-util/cgdb
 dev-util/cgvg
 dev-util/checkbashisms
-dev-util/checkstyle
 dev-util/chroot-wrapper
 dev-util/clair
 dev-util/clazy
@@ -12464,7 +12457,6 @@ gnome-base/gnome-panel
 gnome-base/gnome-session
 gnome-base/gnome-settings-daemon
 gnome-base/gnome-shell
-gnome-base/gnome-vfs
 gnome-base/gsettings-desktop-schemas
 gnome-base/gvfs
 gnome-base/libglade
@@ -15297,7 +15289,6 @@ net-im/empathy
 net-im/err
 net-im/gajim
 net-im/gitter-bin
-net-im/jabber-base
 net-im/libcommuni
 net-im/librvp
 net-im/mattermost-desktop-bin
@@ -19083,7 +19074,6 @@ x11-misc/i3blocks
 x11-misc/i3blocks-contrib
 x11-misc/i3lock
 x11-misc/i3status
-x11-misc/i855crt
 x11-misc/icon-naming-utils
 x11-misc/iconbox
 x11-misc/idesk
