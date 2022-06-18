@@ -975,6 +975,7 @@ app-admin/gam-server
 app-admin/gamin
 app-admin/genromfs
 app-admin/gentoo-perl-helpers
+app-admin/gentoo-retirement-scripts
 app-admin/gentoo-rsync-mirror
 app-admin/git-credential-gopass
 app-admin/github-backup-utils
@@ -1093,7 +1094,6 @@ app-admin/tmpwatch
 app-admin/tpm
 app-admin/tripwire
 app-admin/ulogd
-app-admin/undertaker-scripts
 app-admin/usbview
 app-admin/vault
 app-admin/verynice
@@ -1125,6 +1125,7 @@ app-arch/cksfv
 app-arch/clzip
 app-arch/cpio
 app-arch/createrepo_c
+app-arch/csnappy
 app-arch/deb2targz
 app-arch/dpkg
 app-arch/duff
@@ -2237,6 +2238,7 @@ app-emacs/anaphora
 app-emacs/ansi
 app-emacs/apache-mode
 app-emacs/apel
+app-emacs/assess
 app-emacs/async
 app-emacs/atomic-chrome
 app-emacs/auctex
@@ -2263,6 +2265,7 @@ app-emacs/bui
 app-emacs/buttercup
 app-emacs/calfw
 app-emacs/cask
+app-emacs/cask-mode
 app-emacs/cfrs
 app-emacs/chess
 app-emacs/circe
@@ -2366,6 +2369,7 @@ app-emacs/geiser
 app-emacs/geiser-chez
 app-emacs/geiser-guile
 app-emacs/ghub
+app-emacs/git-modes
 app-emacs/gnuplot-mode
 app-emacs/gnuserv
 app-emacs/go-mode
@@ -2402,6 +2406,7 @@ app-emacs/keywiz
 app-emacs/lean-mode
 app-emacs/ledger-mode
 app-emacs/libegit2
+app-emacs/load-relative
 app-emacs/lookup
 app-emacs/lsp-java
 app-emacs/lsp-mode
@@ -2410,6 +2415,7 @@ app-emacs/lsp-ui
 app-emacs/lua-mode
 app-emacs/lv
 app-emacs/lyskom-elisp-client
+app-emacs/m-buffer
 app-emacs/magit
 app-emacs/magit-popup
 app-emacs/mailcrypt
@@ -2479,6 +2485,7 @@ app-emacs/qwerty
 app-emacs/racket-mode
 app-emacs/rainbow-delimiters
 app-emacs/rainbow-mode
+app-emacs/raku-mode
 app-emacs/redo+
 app-emacs/reformatter
 app-emacs/regress
@@ -4196,6 +4203,7 @@ dev-embedded/libftd2xx
 dev-embedded/libftdi
 dev-embedded/libjaylink
 dev-embedded/lpc21isp
+dev-embedded/mavlink_c
 dev-embedded/mcu8051ide
 dev-embedded/mspdebug
 dev-embedded/nodemcu-uploader
@@ -5213,7 +5221,6 @@ dev-java/findbugs-annotations
 dev-java/fontbox
 dev-java/fop
 dev-java/gin
-dev-java/glassfish-jms-api
 dev-java/glassfish-persistence
 dev-java/glassfish-xmlrpc-api
 dev-java/gnu-jaf
@@ -5398,7 +5405,6 @@ dev-java/spec-alpha
 dev-java/stax2-api
 dev-java/stringtemplate
 dev-java/sun-jai-bin
-dev-java/sun-jms
 dev-java/swing-layout
 dev-java/swingx
 dev-java/swingx-beaninfo
@@ -5924,6 +5930,7 @@ dev-libs/libzia
 dev-libs/libzip
 dev-libs/light
 dev-libs/link-grammar
+dev-libs/linux-syscall-support
 dev-libs/lockdev
 dev-libs/log4cplus
 dev-libs/log4cpp
@@ -6043,6 +6050,7 @@ dev-libs/thrift
 dev-libs/tinyxml
 dev-libs/tinyxml2
 dev-libs/tllist
+dev-libs/tlsh
 dev-libs/tntnet
 dev-libs/tomsfastmath
 dev-libs/totem-pl-parser
@@ -8371,7 +8379,6 @@ dev-python/aioredis
 dev-python/aioresponses
 dev-python/aiorpcX
 dev-python/aiosignal
-dev-python/aiosmtpd
 dev-python/ajsonrpc
 dev-python/alabaster
 dev-python/alagitpull
@@ -8414,7 +8421,6 @@ dev-python/atomicwrites
 dev-python/atpublic
 dev-python/attrs
 dev-python/audioread
-dev-python/authheaders
 dev-python/authres
 dev-python/autobahn
 dev-python/autocommand
@@ -8428,7 +8434,6 @@ dev-python/awxkit
 dev-python/babelfish
 dev-python/backcall
 dev-python/backoff
-dev-python/backports-entry_points_selectable
 dev-python/backports-tempfile
 dev-python/backports-weakref
 dev-python/backports-zoneinfo
@@ -8502,6 +8507,7 @@ dev-python/characteristic
 dev-python/chardet
 dev-python/charset_normalizer
 dev-python/chart-studio
+dev-python/check-manifest
 dev-python/cheetah3
 dev-python/cheroot
 dev-python/cherrypy
@@ -8580,6 +8586,7 @@ dev-python/denonavr
 dev-python/deprecated
 dev-python/deprecation
 dev-python/dictdiffer
+dev-python/dictpath
 dev-python/dicttoxml
 dev-python/diff-match-patch
 dev-python/dill
@@ -8593,25 +8600,16 @@ dev-python/dj-database-url
 dev-python/dj-email-url
 dev-python/dj-search-url
 dev-python/django
-dev-python/django-allauth
-dev-python/django-appconf
 dev-python/django-auth-ldap
 dev-python/django-cache-url
 dev-python/django-cacheops
-dev-python/django-compressor
 dev-python/django-configurations
 dev-python/django-cors-headers
-dev-python/django-debug-toolbar
-dev-python/django-extensions
 dev-python/django-filter
-dev-python/django-gravatar2
-dev-python/django-haystack
 dev-python/django-js-asset
 dev-python/django-mptt
 dev-python/django-otp
-dev-python/django-picklefield
 dev-python/django-prometheus
-dev-python/django-q
 dev-python/django-redis
 dev-python/django-rq
 dev-python/django-sortedm2m
@@ -8672,7 +8670,6 @@ dev-python/expects
 dev-python/extras
 dev-python/eyeD3
 dev-python/fakeredis
-dev-python/falcon
 dev-python/fasteners
 dev-python/fastimport
 dev-python/fastjsonschema
@@ -8720,10 +8717,7 @@ dev-python/flexmock
 dev-python/flit
 dev-python/flit_core
 dev-python/flit_scm
-dev-python/flufl-bounce
-dev-python/flufl-i18n
 dev-python/flufl-lock
-dev-python/flufl-testing
 dev-python/fonttools
 dev-python/fqdn
 dev-python/freezegun
@@ -8859,6 +8853,7 @@ dev-python/jaraco-logging
 dev-python/jaraco-packaging
 dev-python/jaraco-path
 dev-python/jaraco-stream
+dev-python/jaraco-test
 dev-python/jaraco-text
 dev-python/jc
 dev-python/jdcal
@@ -8920,8 +8915,6 @@ dev-python/kombu
 dev-python/krb5
 dev-python/lark
 dev-python/latexcodec
-dev-python/lazr-config
-dev-python/lazr-delegates
 dev-python/lazy-object-proxy
 dev-python/ldap3
 dev-python/leather
@@ -8983,6 +8976,7 @@ dev-python/memory_profiler
 dev-python/mergedeep
 dev-python/mergedict
 dev-python/meshio
+dev-python/meson-python
 dev-python/metakernel
 dev-python/micawber
 dev-python/mimerender
@@ -9073,6 +9067,7 @@ dev-python/oct2py
 dev-python/octave_kernel
 dev-python/odfpy
 dev-python/olefile
+dev-python/openapi-core
 dev-python/openapi-schema-validator
 dev-python/openapi-spec-validator
 dev-python/openpyxl
@@ -9326,6 +9321,7 @@ dev-python/pypiserver
 dev-python/pypng
 dev-python/pyprof2calltree
 dev-python/pyproj
+dev-python/pyproject-metadata
 dev-python/pyproject2setuppy
 dev-python/pypugjs
 dev-python/pypy
@@ -9387,6 +9383,7 @@ dev-python/pytest-freezegun
 dev-python/pytest-helpers-namespace
 dev-python/pytest-html
 dev-python/pytest-httpbin
+dev-python/pytest-httpserver
 dev-python/pytest-httpx
 dev-python/pytest-lazy-fixture
 dev-python/pytest-localftpserver
@@ -9495,7 +9492,6 @@ dev-python/python-xmlsec
 dev-python/python-xmp-toolkit
 dev-python/python-zipstream
 dev-python/python3-lxc
-dev-python/python3-openid
 dev-python/python3-saml
 dev-python/python3-xapp
 dev-python/python_orocos_kdl
@@ -9537,7 +9533,6 @@ dev-python/raet
 dev-python/random2
 dev-python/rarfile
 dev-python/ratelimit
-dev-python/rcssmin
 dev-python/rdflib
 dev-python/re-assert
 dev-python/readme_renderer
@@ -9576,8 +9571,6 @@ dev-python/rfc3986
 dev-python/rfc3986-validator
 dev-python/rfc3987
 dev-python/rich
-dev-python/rjsmin
-dev-python/robot-detection
 dev-python/roman
 dev-python/rope
 dev-python/ropemode
@@ -9669,6 +9662,7 @@ dev-python/sphinx-notfound-page
 dev-python/sphinx-panels
 dev-python/sphinx-prompt
 dev-python/sphinx-py3doc-enhanced-theme
+dev-python/sphinx-pytest
 dev-python/sphinx-tabs
 dev-python/sphinx-testing
 dev-python/sphinx_ansible_theme
@@ -9770,6 +9764,7 @@ dev-python/tinycss
 dev-python/tinycss2
 dev-python/tld
 dev-python/tldextract
+dev-python/tlsh
 dev-python/toml
 dev-python/tomli
 dev-python/tomli-w
@@ -9836,6 +9831,7 @@ dev-python/vdirsyncer
 dev-python/vecrec
 dev-python/verboselogs
 dev-python/versioneer
+dev-python/versioningit
 dev-python/vine
 dev-python/virtualenv
 dev-python/virtualenv-clone
@@ -11219,6 +11215,7 @@ dev-util/bnfc
 dev-util/boost-build
 dev-util/bpftool
 dev-util/bpftrace
+dev-util/breakpad
 dev-util/bsdiff
 dev-util/btyacc
 dev-util/build2
@@ -11495,6 +11492,7 @@ dev-util/rocm-cmake
 dev-util/rocm-smi
 dev-util/rocm_bandwidth_test
 dev-util/rocminfo
+dev-util/rocprofiler
 dev-util/roctracer
 dev-util/ropper
 dev-util/rosdep
@@ -11572,6 +11570,7 @@ dev-util/wachy
 dev-util/wasmer
 dev-util/watchman
 dev-util/wayland-scanner
+dev-util/web_page_replay_go
 dev-util/webhook
 dev-util/weka
 dev-util/wiggle
@@ -12628,7 +12627,6 @@ gui-libs/xdg-desktop-portal-wlr
 gui-wm/hikari
 gui-wm/sway
 gui-wm/wayfire
-java-virtuals/jms
 java-virtuals/servlet-api
 kde-apps/akonadi
 kde-apps/akonadi-calendar
@@ -13523,7 +13521,6 @@ media-gfx/mypaint-brushes
 media-gfx/netpaint
 media-gfx/nomacs
 media-gfx/nvidia-cg-toolkit
-media-gfx/nvidia-texture-tools
 media-gfx/openclipart
 media-gfx/opencsg
 media-gfx/openmesh
@@ -15491,6 +15488,7 @@ net-libs/libprotoident
 net-libs/libproxy
 net-libs/libpsl
 net-libs/libqmi
+net-libs/libqrtr-glib
 net-libs/libquotient
 net-libs/librouteros
 net-libs/librsync
@@ -15582,7 +15580,6 @@ net-mail/courier-imap
 net-mail/courierpassd
 net-mail/cyrus-imapd
 net-mail/dbmail
-net-mail/django-mailman3
 net-mail/dot-forward
 net-mail/dovecot
 net-mail/email
@@ -15593,7 +15590,6 @@ net-mail/fetchmail
 net-mail/getmail
 net-mail/gnubiff
 net-mail/grepmail
-net-mail/hyperkitty
 net-mail/imapsync
 net-mail/isync
 net-mail/lbdb
@@ -15603,9 +15599,6 @@ net-mail/mailbase
 net-mail/mailbox-count
 net-mail/mailfront
 net-mail/mailgraph
-net-mail/mailman
-net-mail/mailman-meta
-net-mail/mailmanclient
 net-mail/mailshears
 net-mail/mailutils
 net-mail/mairix
@@ -15630,7 +15623,6 @@ net-mail/pop2imap
 net-mail/popa3d
 net-mail/poppassd_ceti
 net-mail/postfix-logwatch
-net-mail/postorius
 net-mail/public-inbox
 net-mail/qlogtools
 net-mail/qmail-autoresponder
@@ -16576,6 +16568,7 @@ sci-chemistry/votca-xtp
 sci-chemistry/wxmacmolplt
 sci-chemistry/xds-bin
 sci-chemistry/xyza2pipe
+sci-electronics/NanoVNA-QT
 sci-electronics/Stage
 sci-electronics/drahnr-oregano
 sci-electronics/eagle
@@ -16699,6 +16692,7 @@ sci-libs/XNNPACK
 sci-libs/adolc
 sci-libs/alglib
 sci-libs/amd
+sci-libs/arborx
 sci-libs/armadillo
 sci-libs/arpack
 sci-libs/arprec
@@ -16784,6 +16778,7 @@ sci-libs/gerris
 sci-libs/getdata
 sci-libs/ginkgo
 sci-libs/givaro
+sci-libs/gloo
 sci-libs/gmsh
 sci-libs/gsl
 sci-libs/gts
@@ -16944,6 +16939,7 @@ sci-libs/tamu_anova
 sci-libs/taucs
 sci-libs/tensorflow
 sci-libs/tensorflow-estimator
+sci-libs/tensorpipe
 sci-libs/tnt
 sci-libs/trilinos
 sci-libs/udunits
@@ -17128,6 +17124,7 @@ sci-visualization/xd3d
 sci-visualization/xgraph
 sci-visualization/xyscan
 sci-visualization/zhu3d
+sec-keys/openpgp-keys-aacid
 sec-keys/openpgp-keys-adamspiers
 sec-keys/openpgp-keys-alexbarton
 sec-keys/openpgp-keys-antoniodiazdiaz
@@ -17150,6 +17147,7 @@ sec-keys/openpgp-keys-dropbear
 sec-keys/openpgp-keys-elfutils
 sec-keys/openpgp-keys-evenrouault
 sec-keys/openpgp-keys-ffmpeg
+sec-keys/openpgp-keys-file
 sec-keys/openpgp-keys-findutils
 sec-keys/openpgp-keys-gawk
 sec-keys/openpgp-keys-gdbm
@@ -17174,6 +17172,7 @@ sec-keys/openpgp-keys-libass
 sec-keys/openpgp-keys-libidn
 sec-keys/openpgp-keys-libvirt
 sec-keys/openpgp-keys-linuxcontainers
+sec-keys/openpgp-keys-llvm
 sec-keys/openpgp-keys-m4
 sec-keys/openpgp-keys-madler
 sec-keys/openpgp-keys-make
@@ -17182,6 +17181,7 @@ sec-keys/openpgp-keys-miniupnp
 sec-keys/openpgp-keys-mlichvar
 sec-keys/openpgp-keys-musl
 sec-keys/openpgp-keys-netfilter
+sec-keys/openpgp-keys-nettle
 sec-keys/openpgp-keys-nmap
 sec-keys/openpgp-keys-notqmail
 sec-keys/openpgp-keys-oletange
@@ -17524,6 +17524,7 @@ sys-apps/ed
 sys-apps/edac-utils
 sys-apps/edid-decode
 sys-apps/edid-fixdim
+sys-apps/eless
 sys-apps/elfix
 sys-apps/epoch
 sys-apps/etckeeper
@@ -18343,6 +18344,7 @@ sys-process/bcron
 sys-process/below
 sys-process/bottom
 sys-process/bpytop
+sys-process/btop
 sys-process/criu
 sys-process/cronbase
 sys-process/cronie
@@ -18449,6 +18451,7 @@ virtual/opengl
 virtual/os-headers
 virtual/package-manager
 virtual/pager
+virtual/pandoc
 virtual/perl-Archive-Tar
 virtual/perl-Attribute-Handlers
 virtual/perl-AutoLoader
@@ -19621,6 +19624,7 @@ x11-wm/enlightenment
 x11-wm/evilwm
 x11-wm/fluxbox
 x11-wm/fvwm
+x11-wm/fvwm3
 x11-wm/goomwwm
 x11-wm/herbstluftwm
 x11-wm/i3
